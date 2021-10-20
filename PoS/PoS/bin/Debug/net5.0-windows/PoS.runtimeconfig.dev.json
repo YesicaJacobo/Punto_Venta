@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Yesica\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Yesica\\.nuget\\packages"
+    ]
+  }
+}

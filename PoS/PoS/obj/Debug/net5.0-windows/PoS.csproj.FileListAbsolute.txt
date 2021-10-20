@@ -1,0 +1,233 @@
+D:\Visual Studio 2019\source\repos\PoS\PoS\bin\Debug\net5.0-windows\PoS.exe
+D:\Visual Studio 2019\source\repos\PoS\PoS\bin\Debug\net5.0-windows\PoS.deps.json
+D:\Visual Studio 2019\source\repos\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.json
+D:\Visual Studio 2019\source\repos\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.dev.json
+D:\Visual Studio 2019\source\repos\PoS\PoS\bin\Debug\net5.0-windows\PoS.dll
+D:\Visual Studio 2019\source\repos\PoS\PoS\bin\Debug\net5.0-windows\ref\PoS.dll
+D:\Visual Studio 2019\source\repos\PoS\PoS\bin\Debug\net5.0-windows\PoS.pdb
+D:\Visual Studio 2019\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.csprojAssemblyReference.cache
+D:\Visual Studio 2019\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.Form1.resources
+D:\Visual Studio 2019\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.GenerateResource.cache
+D:\Visual Studio 2019\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio 2019\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfoInputs.cache
+D:\Visual Studio 2019\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfo.cs
+D:\Visual Studio 2019\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2019\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.dll
+D:\Visual Studio 2019\source\repos\PoS\PoS\obj\Debug\net5.0-windows\ref\PoS.dll
+D:\Visual Studio 2019\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.pdb
+D:\Visual Studio 2019\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.genruntimeconfig.cache
+D:\Visual Studio 2019\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.PuntoDeVenta.resources
+D:\Visual Studio 2019\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.Properties.Resources.resources
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\bin\Debug\net5.0-windows\PoS.exe
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\bin\Debug\net5.0-windows\PoS.deps.json
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.json
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.dev.json
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\bin\Debug\net5.0-windows\PoS.dll
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\bin\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\bin\Debug\net5.0-windows\PoS.pdb
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.AssemblyReference.cache
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.Form1.resources
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.Properties.Resources.resources
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.PuntoDeVenta.resources
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.GenerateResource.cache
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfoInputs.cache
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfo.cs
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CoreCompileInputs.cache
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.dll
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\obj\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.pdb
+C:\Users\Vicxstroll20ka\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.genruntimeconfig.cache
+C:\Users\angel\Downloads\PoS\PoS\bin\Debug\net5.0-windows\PoS.exe
+C:\Users\angel\Downloads\PoS\PoS\bin\Debug\net5.0-windows\PoS.deps.json
+C:\Users\angel\Downloads\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.json
+C:\Users\angel\Downloads\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.dev.json
+C:\Users\angel\Downloads\PoS\PoS\bin\Debug\net5.0-windows\PoS.dll
+C:\Users\angel\Downloads\PoS\PoS\bin\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\angel\Downloads\PoS\PoS\bin\Debug\net5.0-windows\PoS.pdb
+C:\Users\angel\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.AssemblyReference.cache
+C:\Users\angel\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.Form1.resources
+C:\Users\angel\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.Properties.Resources.resources
+C:\Users\angel\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.PuntoDeVenta.resources
+C:\Users\angel\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.GenerateResource.cache
+C:\Users\angel\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfoInputs.cache
+C:\Users\angel\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfo.cs
+C:\Users\angel\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CoreCompileInputs.cache
+C:\Users\angel\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.dll
+C:\Users\angel\Downloads\PoS\PoS\obj\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\angel\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.pdb
+C:\Users\angel\Downloads\PoS\PoS\obj\Debug\net5.0-windows\PoS.genruntimeconfig.cache
+D:\Users\ELG\source\repos\PoS\PoS\bin\Debug\net5.0-windows\PoS.exe
+D:\Users\ELG\source\repos\PoS\PoS\bin\Debug\net5.0-windows\PoS.deps.json
+D:\Users\ELG\source\repos\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.json
+D:\Users\ELG\source\repos\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.dev.json
+D:\Users\ELG\source\repos\PoS\PoS\bin\Debug\net5.0-windows\PoS.dll
+D:\Users\ELG\source\repos\PoS\PoS\bin\Debug\net5.0-windows\ref\PoS.dll
+D:\Users\ELG\source\repos\PoS\PoS\bin\Debug\net5.0-windows\PoS.pdb
+D:\Users\ELG\source\repos\PoS\PoS\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+D:\Users\ELG\source\repos\PoS\PoS\bin\Debug\net5.0-windows\Google.Protobuf.dll
+D:\Users\ELG\source\repos\PoS\PoS\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+D:\Users\ELG\source\repos\PoS\PoS\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\Users\ELG\source\repos\PoS\PoS\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+D:\Users\ELG\source\repos\PoS\PoS\bin\Debug\net5.0-windows\MySql.Data.dll
+D:\Users\ELG\source\repos\PoS\PoS\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+D:\Users\ELG\source\repos\PoS\PoS\bin\Debug\net5.0-windows\Zstandard.Net.dll
+D:\Users\ELG\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.Form1.resources
+D:\Users\ELG\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.Properties.Resources.resources
+D:\Users\ELG\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.PuntoDeVenta.resources
+D:\Users\ELG\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.GenerateResource.cache
+D:\Users\ELG\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\ELG\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfoInputs.cache
+D:\Users\ELG\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfo.cs
+D:\Users\ELG\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CoreCompileInputs.cache
+D:\Users\ELG\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CopyComplete
+D:\Users\ELG\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.dll
+D:\Users\ELG\source\repos\PoS\PoS\obj\Debug\net5.0-windows\ref\PoS.dll
+D:\Users\ELG\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.pdb
+D:\Users\ELG\source\repos\PoS\PoS\obj\Debug\net5.0-windows\PoS.genruntimeconfig.cache
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\bin\Debug\net5.0-windows\PoS.exe
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\bin\Debug\net5.0-windows\PoS.deps.json
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.json
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.dev.json
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\bin\Debug\net5.0-windows\PoS.dll
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\bin\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\bin\Debug\net5.0-windows\PoS.pdb
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\bin\Debug\net5.0-windows\Google.Protobuf.dll
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\bin\Debug\net5.0-windows\MySql.Data.dll
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\bin\Debug\net5.0-windows\Zstandard.Net.dll
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\obj\Debug\net5.0-windows\PoS.csprojAssemblyReference.cache
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\obj\Debug\net5.0-windows\PoS.Form1.resources
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\obj\Debug\net5.0-windows\PoS.Properties.Resources.resources
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\obj\Debug\net5.0-windows\PoS.PuntoDeVenta.resources
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.GenerateResource.cache
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\obj\Debug\net5.0-windows\PoS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfoInputs.cache
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfo.cs
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CoreCompileInputs.cache
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CopyComplete
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\obj\Debug\net5.0-windows\PoS.dll
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\obj\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\obj\Debug\net5.0-windows\PoS.pdb
+C:\Users\Usario\OneDrive - Universidad de Sonora\VII\Administración de Proyectos Informáticos II\PoS\PoS\obj\Debug\net5.0-windows\PoS.genruntimeconfig.cache
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.exe
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.deps.json
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.json
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.dev.json
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.dll
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\bin\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.pdb
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\bin\Debug\net5.0-windows\Google.Protobuf.dll
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\bin\Debug\net5.0-windows\MySql.Data.dll
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\bin\Debug\net5.0-windows\Zstandard.Net.dll
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.AssemblyReference.cache
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.Form1.resources
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.Properties.Resources.resources
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.PuntoDeVenta.resources
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.GenerateResource.cache
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfoInputs.cache
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfo.cs
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CoreCompileInputs.cache
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CopyComplete
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.dll
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\obj\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.pdb
+C:\Users\Kim\Downloads\PoS - 22_09_2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.genruntimeconfig.cache
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.exe
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.deps.json
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.json
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.dev.json
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.dll
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.pdb
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\Google.Protobuf.dll
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\MySql.Data.dll
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\Zstandard.Net.dll
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.AssemblyReference.cache
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.Form1.resources
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.Properties.Resources.resources
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.PuntoDeVenta.resources
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.GenerateResource.cache
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfoInputs.cache
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfo.cs
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CoreCompileInputs.cache
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CopyComplete
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.dll
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.pdb
+C:\Users\Edi\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.genruntimeconfig.cache
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.exe
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.deps.json
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.json
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.dev.json
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.dll
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\PoS.pdb
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\Google.Protobuf.dll
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\MySql.Data.dll
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\bin\Debug\net5.0-windows\Zstandard.Net.dll
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.AssemblyReference.cache
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.Form1.resources
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.Properties.Resources.resources
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.PuntoDeVenta.resources
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.GenerateResource.cache
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfoInputs.cache
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfo.cs
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CoreCompileInputs.cache
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CopyComplete
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.dll
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.pdb
+C:\Users\denia\Downloads\PoS - 23-09-2021\PoS\PoS\obj\Debug\net5.0-windows\PoS.genruntimeconfig.cache
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\PoS.exe
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\PoS.deps.json
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.json
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.dev.json
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\PoS.dll
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\PoS.pdb
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\Google.Protobuf.dll
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\MySql.Data.dll
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\Zstandard.Net.dll
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.AssemblyReference.cache
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.Form1.resources
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.Properties.Resources.resources
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.PuntoDeVenta.resources
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.GenerateResource.cache
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfoInputs.cache
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfo.cs
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CoreCompileInputs.cache
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CopyComplete
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.dll
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.pdb
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.genruntimeconfig.cache
