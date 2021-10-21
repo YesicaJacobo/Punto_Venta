@@ -14,8 +14,10 @@ namespace PoS
     public partial class PuntoDeVenta : Form
     {
         private double total = 0.0;
+        private double cambio =0.0;
         private int segundos = 0;
         private int timer = 0;
+        private int index = -1;
         private Boolean bandera = false;
         public PuntoDeVenta()
         {
@@ -70,8 +72,13 @@ namespace PoS
         {
             if (e.KeyChar == 27 && tablaProductos.Rows.Count > 0)
             {
-                tablaProductos.Rows.RemoveAt(tablaProductos.Rows.Count - 1);
-                CalcularTotal();
+                if (MessageBox.Show("¿Seguro de que quiere eliminar este producto?", "Atención", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    tablaProductos.Rows.RemoveAt(tablaProductos.Rows.Count - 1);
+                    CalcularTotal();
+                }
+                
+                
             }
             if (e.KeyChar == 13)
             {
@@ -99,8 +106,27 @@ namespace PoS
                         logo.Location = new Point(15,10);
 
                         mySqlDataReader.Read();
-                        tablaProductos.Rows.Add("1", mySqlDataReader.GetString(1), String.Format("{0:0.00}", mySqlDataReader.GetDouble(3)), String.Format("{0:0.00}", mySqlDataReader.GetDouble(3)));
+                        Boolean producto_rep = false;
+                        foreach (DataGridViewRow row in tablaProductos.Rows)
+                        {
+                            if (mySqlDataReader.GetString(1) == Convert.ToString(row.Cells[1].Value))
+                            {
+                                producto_rep = true;
+                                row.Cells[0].Value = Convert.ToInt32(row.Cells[0].Value) + 1;
+                                
+                                row.Cells[3].Value = String.Format("{0:0.00}", Convert.ToDouble(row.Cells[0].Value) * Convert.ToDouble(row.Cells[2].Value));
+                                break;
+                            }
+                            else {
+                                producto_rep = false;
+                            }
+                        }
+                        if (!producto_rep)
+                        {
+                            tablaProductos.Rows.Add("1", mySqlDataReader.GetString(1), String.Format("{0:0.00}", mySqlDataReader.GetDouble(3)), String.Format("{0:0.00}", mySqlDataReader.GetDouble(3)));
+                        }
                         
+
                         CalcularTotal();
                         codigo.Clear();
                         codigo.Focus();
@@ -143,12 +169,17 @@ namespace PoS
 
                 if (Convert.ToDouble(codigo.Text)>= total)
                 {
-                    labelTotal.Text = $"Cambio: {Math.Round(Convert.ToDouble(codigo.Text) - total, 2)}";
+                    cambio = Math.Round(Convert.ToDouble(codigo.Text) - total, 2);
+                    labelTotal.Text = $"Cambio: {cambio}";
                     tablaProductos.Rows.Clear();
                     codigo.Clear();
                     codigo.Focus();
 
-                    MessageBox.Show($"Gracias por su compra vuelva pronto (^-^)/");
+                    MessageBox.Show("\n|---------------------------------------------------------------|" +
+                                   $"\n|                              Total: {total}                                     |"+
+                                   $"\n|                              Cambio: {cambio}                                  |"+ 
+                                   $"\n| Gracias por su compra vuelva pronto (^-^)/           |"+
+                                    "\n|---------------------------------------------------------------|");
                     bandera = false; 
 
                     segundos = 0;
@@ -240,6 +271,31 @@ namespace PoS
             
             
 
+        }
+
+        private void tablaProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            
+        }
+
+        private void tablaProductos_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tablaProductos_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 27 && tablaProductos.Rows.Count > 0)
+            {
+                if (MessageBox.Show("¿Seguro de que quiere eliminar este producto?", "Atención", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    int index = tablaProductos.CurrentCell.RowIndex;
+                    tablaProductos.Rows.RemoveAt(index);
+                   
+                    CalcularTotal();
+                }
+            }
         }
     }
 }

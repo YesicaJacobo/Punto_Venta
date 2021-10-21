@@ -89,7 +89,6 @@ namespace PoS
             // tablaProductos
             // 
             this.tablaProductos.AllowUserToAddRows = false;
-            this.tablaProductos.AllowUserToDeleteRows = false;
             this.tablaProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.tablaProductos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.tablaProductos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(197)))), ((int)(((byte)(150)))));
@@ -113,7 +112,6 @@ namespace PoS
             this.tablaProductos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
             this.tablaProductos.Location = new System.Drawing.Point(57, 111);
             this.tablaProductos.Name = "tablaProductos";
-            this.tablaProductos.ReadOnly = true;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightSeaGreen;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Tempus Sans ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -128,8 +126,12 @@ namespace PoS
             dataGridViewCellStyle7.NullValue = null;
             this.tablaProductos.RowsDefaultCellStyle = dataGridViewCellStyle7;
             this.tablaProductos.RowTemplate.Height = 60;
+            this.tablaProductos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tablaProductos.Size = new System.Drawing.Size(335, 158);
             this.tablaProductos.TabIndex = 3;
+            this.tablaProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaProductos_CellContentClick);
+            this.tablaProductos.Click += new System.EventHandler(this.tablaProductos_Click);
+            this.tablaProductos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tablaProductos_KeyPress);
             // 
             // Column1
             // 
@@ -142,7 +144,6 @@ namespace PoS
             this.Column1.HeaderText = "Cantidad";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
@@ -153,7 +154,6 @@ namespace PoS
             this.Column2.HeaderText = "Producto";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
@@ -165,7 +165,6 @@ namespace PoS
             this.Column3.HeaderText = "Precio";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
@@ -177,7 +176,6 @@ namespace PoS
             this.Column4.HeaderText = "Total";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
             // 
             // codigo
             // 
