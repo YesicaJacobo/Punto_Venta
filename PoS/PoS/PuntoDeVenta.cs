@@ -92,6 +92,8 @@ namespace PoS
                     MySqlDataReader mySqlDataReader = mySqlCommand.ExecuteReader();
                     if (mySqlDataReader.HasRows)
                     {
+                        Form1 F1 = new Form1();
+                        nombre.Text = "Lo atiende: "+F1.nombre;
                         bandera = true;
                         tablaProductos.Visible = true;
                         labelTotal.Visible = true;

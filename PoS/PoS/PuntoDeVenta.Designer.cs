@@ -52,6 +52,7 @@ namespace PoS
             this.labelPaseCodigo = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.perdido = new System.Windows.Forms.PictureBox();
+            this.nombre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tablaProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.perdido)).BeginInit();
@@ -244,6 +245,17 @@ namespace PoS
             this.perdido.TabStop = false;
             this.perdido.Visible = false;
             // 
+            // nombre
+            // 
+            this.nombre.AutoSize = true;
+            this.nombre.Font = new System.Drawing.Font("Mat Saleh", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            this.nombre.Location = new System.Drawing.Point(12, 68);
+            this.nombre.Name = "nombre";
+            this.nombre.Size = new System.Drawing.Size(154, 27);
+            this.nombre.TabIndex = 9;
+            this.nombre.Text = "Lo atiende:";
+            // 
             // PuntoDeVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -251,6 +263,7 @@ namespace PoS
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.nombre);
             this.Controls.Add(this.perdido);
             this.Controls.Add(this.labelPaseCodigo);
             this.Controls.Add(this.logo);
@@ -289,5 +302,6 @@ namespace PoS
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.PictureBox perdido;
+        private System.Windows.Forms.Label nombre;
     }
 }
