@@ -14,7 +14,7 @@ namespace PoS
     public partial class Form1 : Form
     {
         public String nombre;
-
+        public int id;
         public Form1()
         {
             InitializeComponent();
@@ -55,7 +55,8 @@ namespace PoS
                         {
                             while (mySqlDataReader.Read()) {
                                 nombre = mySqlDataReader.GetString(1) + " " + mySqlDataReader.GetString(2) + " " + mySqlDataReader.GetString(3);
-                                MessageBox.Show(nombre);
+                                id = Convert.ToInt32(mySqlDataReader.GetString(0));
+                                MessageBox.Show(id+" "+nombre);
                                 PuntoDeVenta PV = new PuntoDeVenta();
                                 PV.Show();
                                 this.Hide();

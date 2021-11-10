@@ -13,6 +13,8 @@ namespace PoS
 {
     public partial class PuntoDeVenta : Form
     {
+        Form2 F2 = new Form2();
+        Form1 F1 = new Form1();
         private double total = 0.0;
         private double cambio =0.0;
         private int segundos = 0;
@@ -92,7 +94,6 @@ namespace PoS
                     MySqlDataReader mySqlDataReader = mySqlCommand.ExecuteReader();
                     if (mySqlDataReader.HasRows)
                     {
-                        Form1 F1 = new Form1();
                         nombre.Text = "Lo atiende: "+F1.nombre;
                         bandera = true;
                         tablaProductos.Visible = true;
@@ -125,7 +126,7 @@ namespace PoS
                         }
                         if (!producto_rep)
                         {
-                            tablaProductos.Rows.Add("1", mySqlDataReader.GetString(1), String.Format("{0:0.00}", mySqlDataReader.GetDouble(3)), String.Format("{0:0.00}", mySqlDataReader.GetDouble(3)));
+                            tablaProductos.Rows.Add("1", mySqlDataReader.GetString(1), String.Format("{0:0.00}", mySqlDataReader.GetDouble(3)), String.Format("{0:0.00}", mySqlDataReader.GetDouble(3)), mySqlDataReader.GetDouble(0));
                         }
                         
 
@@ -166,22 +167,58 @@ namespace PoS
             if (e.KeyChar == 'P' || e.KeyChar == 'p')
             {
                 e.Handled = true;
-                //MessageBox.Show($"¿Va a pagar? {textBox1.Text} {total} {Environment.NewLine} " +
-                //    $"{Convert.ToDouble(textBox1.Text) - total}");
 
                 if (Convert.ToDouble(codigo.Text)>= total)
                 {
                     cambio = Math.Round(Convert.ToDouble(codigo.Text) - total, 2);
                     labelTotal.Text = $"Cambio: {cambio}";
-                    tablaProductos.Rows.Clear();
-                    codigo.Clear();
-                    codigo.Focus();
+                    
+                    try
+                    {
+                        MySqlConnection mySqlConnection = new MySqlConnection("server=127.0.0.1; user=root; database=verificador_de_precios_2; SSL mode=none");
+                        mySqlConnection.Open();
+                        String query = "INSERT INTO ventas VALUES (NULL, CURRENT_DATE(), CURRENT_TIME(), " + F1.id + ")";
+                        MySqlCommand mySqlCommand = new MySqlCommand(query, mySqlConnection);
+                        mySqlCommand.ExecuteNonQuery();
+                        //obtenemos ultimo id de la venta
+                        query = "SELECT LAST_INSERT_ID()";
+                        mySqlCommand = new MySqlCommand(query, mySqlConnection);
+                        MySqlDataReader mySqlDataReader = mySqlCommand.ExecuteReader();
+                        int idVenta = 0;
+                        if (mySqlDataReader.HasRows)
+                        {
+                            mySqlDataReader.Read();
+                            idVenta = mySqlDataReader.GetInt32(0);
+                        }
+                        //insertamos los detalles en venta detalles
+
+                        mySqlConnection.Close();
+                        mySqlConnection.Open();
+
+                        for (int i = 0; i < tablaProductos.Rows.Count; i++)
+                        {
+                            query = "INSERT INTO ventas_detalle (id_venta, id_producto, cantidad, precio_producto) VALUES " +
+                                "(" + idVenta + "," + tablaProductos[4, i].Value.ToString() + "," + tablaProductos[0, i].Value.ToString() +
+                                "," + tablaProductos[2, i].Value.ToString() + " ) ";
+                            mySqlCommand = new MySqlCommand(query, mySqlConnection);
+                            mySqlCommand.ExecuteNonQuery();
+                        }
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("Error añadiendo venta a la tabla " + error.ToString());
+                    }
 
                     MessageBox.Show("\n|---------------------------------------------------------------|" +
                                    $"\n|                              Total: {total}                                     |"+
                                    $"\n|                              Cambio: {cambio}                                  |"+ 
                                    $"\n| Gracias por su compra vuelva pronto (^-^)/           |"+
                                     "\n|---------------------------------------------------------------|");
+
+                    tablaProductos.Rows.Clear();
+                    codigo.Clear();
+                    codigo.Focus();
+
                     bandera = false; 
 
                     segundos = 0;

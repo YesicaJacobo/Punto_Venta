@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-11-2021 a las 23:54:48
+-- Tiempo de generación: 10-11-2021 a las 02:23:32
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 8.0.9
 
@@ -72,12 +72,7 @@ CREATE TABLE `usuarios` (
   `nombre` varchar(51) DEFAULT NULL,
   `apellido1` varchar(51) DEFAULT NULL,
   `apellido2` varchar(51) DEFAULT NULL,
-  `celular` bigint(12) DEFAULT NULL,
-  `curp` varchar(24) NOT NULL,
-  `rfc` varchar(20) NOT NULL,
-  `nss` varchar(11) NOT NULL,
-  `correo` varchar(254) NOT NULL,
-  `direccion` varchar(254) DEFAULT NULL,
+  `rol` int(254) NOT NULL,
   `pws` int(255) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -85,22 +80,21 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`numero_de_empleado`, `nombre`, `apellido1`, `apellido2`, `celular`, `curp`, `rfc`, `nss`, `correo`, `direccion`, `pws`) VALUES
-(1, 'ANGEL NEYSER', 'VELASCO', 'ZEBADUA', 6622678079, 'VEZA761001HCSLBN01', 'VEZA7610012Z7', '605-94-7096', 'tbenyoussef00m@btcmod.com', 'INDUSTRIAS NO. 3715 NO. B, ZONA INDUSTRIAL, 78395', 12345),
-(2, 'AARON URIEL', 'MACARENO', 'FLORES', 6625225874, 'MAFA670701HPLCLR01', 'MAFA670701ERA', '150-79-1916', 'rmunteanu.dumitr1@jomcs.com', 'ALLENDE NO. 163 S/N, COLIMA CENTRO, 28000', 12345),
-(3, 'MARISOL', 'PEREZ', 'SANCHEZ', 6625889857, 'PESM880113MQTRNR05', 'PESM880113111', '290-67-4317', 'bzadjali98t@manm.site', 'JUAREZ NO. 45 LOC NO. 16, PLAZA PAPAGAYO, 77720', 12345),
-(4, 'COINTA', 'AMBROCIO', 'CRUZ', 6571851367, 'AOCC620208MVZMRN02', 'AOCC620208QV5', '568-33-6511', 'wmohamed.elalamy@cxmyal.com', 'FILOMENO MEDINA NO 83, CENTRO, 28000', 12345),
-(5, 'JOAQUIN', 'VARGAS', 'CAMACHO', 6627493383, 'VACJ810831HCMRMQ04', 'VACJ8108315L5', '525-07-6833', 'cmanoeljoj@codm.community', 'VENUSTIANO CARRANZA NO. 2002 NO. A, CENTRO, 31000', 12345),
-(6, 'ERIKA', 'VALLE', 'SANCHEZ', 6626921535, 'VASE830711MDFLNR05', 'VASE830711MD9', '568-60-0781', 'wandre0005m@readx.site', 'SUCRE NO. 188 S/N, MODERNA, 03510', 12345),
-(7, 'MARLEN', 'CASTRO', 'LOPEZ', 6625090290, 'CALM871222MBCSPR05', 'CALM8712229ZA', '250-47-6226', '0torolokoramacht@googleappsmail.com', 'AV 14 PTE NO. 520, CIUDAD DELICIAS CENTRO, 33000', 12345),
-(8, 'JAVIER', 'MENDOZA', 'MEJIA', 6628217977, 'MEMJ660806HHGNJV07', 'MEMJ660806368', '966-97-8039', '3omar.awawdeh97z@tubidu.com', 'BLOCK NO. 2 NO. BODEGA 6, CENTRAL DE ABASTOS, 58218', 12345),
-(9, 'SILVIA', 'GUZMAN', 'LOPEZ', 6625191961, 'GULS750117MDFZPL03', 'GULS750117PY6', '166-03-1582', 'tgreen-20113@tapiitudulu.com', 'CALLE 14 94 A, BUENAVISTA, 87350', 12345),
-(10, 'EDITH', 'RIOS', 'MARTINEZ', 6629360292, 'RIME740706MOCSRD08', 'RIME7407061W7', '860-77-2905', 'akidilanakarshv@azwo.site', 'BUENAVENTURA MERLIN 601, SAN BERNARDINO, 50080', 12345),
-(11, 'LILIANA JESSICA', 'ABARCA', 'BARRIOS', 6627936465, 'AABL760811MMSBRL02', 'AABL7608112JA', '445-05-1443', '2shaurya.kapoor.k@ponili.cf', 'INDEPENDENCIA NO. 5806, HIDALGO, 88160', 12345),
-(12, 'FERNANDO', 'MENDIOLA', 'ULLOA', 6623616189, 'MEUF830915HDFNLR00', 'MEUF830915GI6', '948-28-4064', 'mking.ahmad.921r@litg.site', 'ARENAL NO. 6, PUEBLO DE LA MAGDALENA PETLACALCO', 12345),
-(13, 'CONCEPCION', 'RAMIREZ', 'SAN MARTIN', 6620728907, 'RASC800802MPLMNN09', 'RASC800802CR1', '609-25-9106', '0lindirbw@docf.site', 'BLVD FCO I MADERO 137 OTE ALTO, CENTRO, 80000', 12345),
-(14, 'AREMY SARAI', 'CUPUL', 'CAUICH', 6623828346, 'CUCA930506MQRPCR06', 'CUCA930506', '662-17-4196', '8jizette_0809900@refee.site', 'Carr. Juárez Porvenir y Camino Escudero, Cp.32530', 12345),
-(15, 'MARCELINO', 'ZAZUETA', 'NAVARRETE', 6627517763, 'ZANM741029HSRZVR02', 'ZANM7410291T4', '421-25-7247', 'chamz@kitchentvs.ru', '5 DE MAYO NO. 322 NO. A, AGUASCALIENTES CENTRO, 20000', 12345);
+INSERT INTO `usuarios` (`numero_de_empleado`, `nombre`, `apellido1`, `apellido2`, `rol`, `pws`) VALUES
+(1, 'ANGEL NEYSER', 'VELASCO', 'ZEBADUA', 1, 12345),
+(2, 'AARON URIEL', 'MACARENO', 'FLORES', 1, 12345),
+(3, 'MARISOL', 'PEREZ', 'SANCHEZ', 1, 12345),
+(4, 'COINTA', 'AMBROCIO', 'CRUZ', 1, 12345),
+(5, 'JOAQUIN', 'VARGAS', 'CAMACHO', 1, 12345),
+(6, 'ERIKA', 'VALLE', 'SANCHEZ', 1, 12345),
+(7, 'MARLEN', 'CASTRO', 'LOPEZ', 1, 12345),
+(8, 'JAVIER', 'MENDOZA', 'MEJIA', 1, 12345),
+(9, 'SILVIA', 'GUZMAN', 'LOPEZ', 1, 12345),
+(10, 'EDITH', 'RIOS', 'MARTINEZ', 1, 12345),
+(11, 'Salma Judith', 'Iturbe', 'Grijalva', 2, 12345),
+(12, 'Yesica Irasema', 'Jacobo', 'Viruel', 2, 12345),
+(13, 'Denia Candelaria', 'Lomas', 'Armenta', 2, 12345),
+(14, 'Jose Humberto', 'Abril', 'Garcia', 2, 12345);
 
 -- --------------------------------------------------------
 
@@ -109,11 +103,39 @@ INSERT INTO `usuarios` (`numero_de_empleado`, `nombre`, `apellido1`, `apellido2`
 --
 
 CREATE TABLE `ventas` (
-  `id_venta` int(11) NOT NULL,
-  `fecha_venta` date NOT NULL,
-  `hora_venta` time NOT NULL,
-  `operador_venta` int(11) NOT NULL
+  `idventa` int(11) NOT NULL,
+  `fechaventa` date NOT NULL,
+  `horaventa` time NOT NULL,
+  `operadorVenta` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `ventas`
+--
+
+INSERT INTO `ventas` (`idventa`, `fechaventa`, `horaventa`, `operadorVenta`) VALUES
+(7, '2021-11-09', '18:02:32', 0),
+(8, '2021-11-09', '18:09:58', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `ventas_detalle`
+--
+
+CREATE TABLE `ventas_detalle` (
+  `id_venta` int(11) NOT NULL,
+  `id_producto` int(11) NOT NULL,
+  `cantidad` int(11) NOT NULL,
+  `precio_producto` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `ventas_detalle`
+--
+
+INSERT INTO `ventas_detalle` (`id_venta`, `id_producto`, `cantidad`, `precio_producto`) VALUES
+(8, 506, 1, 17.9);
 
 --
 -- Índices para tablas volcadas
@@ -130,16 +152,14 @@ ALTER TABLE `productos`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`numero_de_empleado`),
-  ADD UNIQUE KEY `numero_de_empleado` (`numero_de_empleado`),
-  ADD UNIQUE KEY `curp` (`curp`),
-  ADD UNIQUE KEY `rfc` (`rfc`),
-  ADD UNIQUE KEY `nss` (`nss`);
+  ADD UNIQUE KEY `numero_de_empleado` (`numero_de_empleado`);
 
 --
 -- Indices de la tabla `ventas`
 --
 ALTER TABLE `ventas`
-  ADD PRIMARY KEY (`id_venta`);
+  ADD UNIQUE KEY `idventa` (`idventa`),
+  ADD KEY `operadorVenta` (`operadorVenta`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -149,7 +169,7 @@ ALTER TABLE `ventas`
 -- AUTO_INCREMENT de la tabla `ventas`
 --
 ALTER TABLE `ventas`
-  MODIFY `id_venta` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idventa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
