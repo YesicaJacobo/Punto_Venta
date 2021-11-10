@@ -15,11 +15,14 @@ namespace PoS
     {
         public String nombre;
         public int id;
+
+
         public Form1()
         {
             InitializeComponent();
         }
-        
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             alerta.Text = "Datos incompletos";
@@ -51,16 +54,25 @@ namespace PoS
                         mySqlConnection.Open();
                         MySqlCommand mySqlCommand = new MySqlCommand(query, mySqlConnection);
                         MySqlDataReader mySqlDataReader = mySqlCommand.ExecuteReader();
+
+
                         if (mySqlDataReader.HasRows)
                         {
+
                             while (mySqlDataReader.Read()) {
+
                                 nombre = mySqlDataReader.GetString(1) + " " + mySqlDataReader.GetString(2) + " " + mySqlDataReader.GetString(3);
                                 id = Convert.ToInt32(mySqlDataReader.GetString(0));
                                 MessageBox.Show(id+" "+nombre);
-                                PuntoDeVenta PV = new PuntoDeVenta();
+
+                                PuntoDeVenta PV = new PuntoDeVenta();                        
+                                PV.leatiende.Text="Le atiende: "+nombre;
+
                                 PV.Show();
                                 this.Hide();
-                            }   
+                                
+                            }
+                            
                         }
                         else
                         {
@@ -81,6 +93,11 @@ namespace PoS
             {
                 Application.Exit();
             }
+        }
+
+        public Form1(String nomUsuario)
+        {
+            nomUsuario = nombre;
         }
     }
 }

@@ -33,27 +33,27 @@ namespace PoS
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PuntoDeVenta));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PuntoDeVenta));
             this.labelBienvenida = new System.Windows.Forms.Label();
             this.labelHoraFecha = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tablaProductos = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigo = new System.Windows.Forms.TextBox();
             this.labelTotal = new System.Windows.Forms.Label();
             this.logo = new System.Windows.Forms.PictureBox();
             this.labelPaseCodigo = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.perdido = new System.Windows.Forms.PictureBox();
-            this.nombre = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.leatiende = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tablaProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.perdido)).BeginInit();
@@ -132,87 +132,7 @@ namespace PoS
             this.tablaProductos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tablaProductos.Size = new System.Drawing.Size(328, 158);
             this.tablaProductos.TabIndex = 3;
-            this.tablaProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaProductos_CellContentClick);
-            this.tablaProductos.Click += new System.EventHandler(this.tablaProductos_Click);
             this.tablaProductos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tablaProductos_KeyPress);
-            // 
-            // codigo
-            // 
-            this.codigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
-            this.codigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.codigo.Font = new System.Drawing.Font("Tempus Sans ITC", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.codigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.codigo.Location = new System.Drawing.Point(473, 165);
-            this.codigo.Name = "codigo";
-            this.codigo.Size = new System.Drawing.Size(100, 45);
-            this.codigo.TabIndex = 4;
-            this.codigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.codigo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
-            this.codigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
-            // 
-            // labelTotal
-            // 
-            this.labelTotal.AutoSize = true;
-            this.labelTotal.Font = new System.Drawing.Font("Mat Saleh", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.labelTotal.Location = new System.Drawing.Point(607, 275);
-            this.labelTotal.Name = "labelTotal";
-            this.labelTotal.Size = new System.Drawing.Size(107, 36);
-            this.labelTotal.TabIndex = 5;
-            this.labelTotal.Text = "Total";
-            this.labelTotal.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // logo
-            // 
-            this.logo.BackColor = System.Drawing.Color.Transparent;
-            this.logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo.BackgroundImage")));
-            this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logo.Location = new System.Drawing.Point(656, 46);
-            this.logo.Margin = new System.Windows.Forms.Padding(2);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(105, 90);
-            this.logo.TabIndex = 6;
-            this.logo.TabStop = false;
-            // 
-            // labelPaseCodigo
-            // 
-            this.labelPaseCodigo.AutoSize = true;
-            this.labelPaseCodigo.Font = new System.Drawing.Font("Mat Saleh", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelPaseCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.labelPaseCodigo.Location = new System.Drawing.Point(-1, 337);
-            this.labelPaseCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelPaseCodigo.Name = "labelPaseCodigo";
-            this.labelPaseCodigo.Size = new System.Drawing.Size(851, 34);
-            this.labelPaseCodigo.TabIndex = 7;
-            this.labelPaseCodigo.Text = "Por favor pase el codigo del producto en el escaner";
-            // 
-            // timer2
-            // 
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // perdido
-            // 
-            this.perdido.BackColor = System.Drawing.Color.Transparent;
-            this.perdido.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("perdido.BackgroundImage")));
-            this.perdido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.perdido.Location = new System.Drawing.Point(656, 151);
-            this.perdido.Margin = new System.Windows.Forms.Padding(2);
-            this.perdido.Name = "perdido";
-            this.perdido.Size = new System.Drawing.Size(105, 90);
-            this.perdido.TabIndex = 8;
-            this.perdido.TabStop = false;
-            this.perdido.Visible = false;
-            // 
-            // nombre
-            // 
-            this.nombre.AutoSize = true;
-            this.nombre.Font = new System.Drawing.Font("Mat Saleh", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.nombre.Location = new System.Drawing.Point(12, 68);
-            this.nombre.Name = "nombre";
-            this.nombre.Size = new System.Drawing.Size(154, 27);
-            this.nombre.TabIndex = 9;
-            this.nombre.Text = "Lo atiende:";
             // 
             // Column1
             // 
@@ -264,6 +184,83 @@ namespace PoS
             this.id.Name = "id";
             this.id.Visible = false;
             // 
+            // codigo
+            // 
+            this.codigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
+            this.codigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.codigo.Font = new System.Drawing.Font("Tempus Sans ITC", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.codigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            this.codigo.Location = new System.Drawing.Point(473, 165);
+            this.codigo.Name = "codigo";
+            this.codigo.Size = new System.Drawing.Size(100, 45);
+            this.codigo.TabIndex = 4;
+            this.codigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.codigo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
+            this.codigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            // 
+            // labelTotal
+            // 
+            this.labelTotal.AutoSize = true;
+            this.labelTotal.Font = new System.Drawing.Font("Mat Saleh", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            this.labelTotal.Location = new System.Drawing.Point(607, 275);
+            this.labelTotal.Name = "labelTotal";
+            this.labelTotal.Size = new System.Drawing.Size(107, 36);
+            this.labelTotal.TabIndex = 5;
+            this.labelTotal.Text = "Total";
+            // 
+            // logo
+            // 
+            this.logo.BackColor = System.Drawing.Color.Transparent;
+            this.logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo.BackgroundImage")));
+            this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logo.Location = new System.Drawing.Point(656, 46);
+            this.logo.Margin = new System.Windows.Forms.Padding(2);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(105, 90);
+            this.logo.TabIndex = 6;
+            this.logo.TabStop = false;
+            // 
+            // labelPaseCodigo
+            // 
+            this.labelPaseCodigo.AutoSize = true;
+            this.labelPaseCodigo.Font = new System.Drawing.Font("Mat Saleh", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPaseCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            this.labelPaseCodigo.Location = new System.Drawing.Point(-1, 337);
+            this.labelPaseCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPaseCodigo.Name = "labelPaseCodigo";
+            this.labelPaseCodigo.Size = new System.Drawing.Size(851, 34);
+            this.labelPaseCodigo.TabIndex = 7;
+            this.labelPaseCodigo.Text = "Por favor pase el codigo del producto en el escaner";
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // perdido
+            // 
+            this.perdido.BackColor = System.Drawing.Color.Transparent;
+            this.perdido.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("perdido.BackgroundImage")));
+            this.perdido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.perdido.Location = new System.Drawing.Point(656, 151);
+            this.perdido.Margin = new System.Windows.Forms.Padding(2);
+            this.perdido.Name = "perdido";
+            this.perdido.Size = new System.Drawing.Size(105, 90);
+            this.perdido.TabIndex = 8;
+            this.perdido.TabStop = false;
+            this.perdido.Visible = false;
+            // 
+            // leatiende
+            // 
+            this.leatiende.AutoSize = true;
+            this.leatiende.Font = new System.Drawing.Font("Mat Saleh", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.leatiende.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.leatiende.Location = new System.Drawing.Point(12, 52);
+            this.leatiende.Name = "leatiende";
+            this.leatiende.Size = new System.Drawing.Size(196, 35);
+            this.leatiende.TabIndex = 9;
+            this.leatiende.Text = "Le atiende:";
+            // 
             // PuntoDeVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -271,7 +268,7 @@ namespace PoS
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.nombre);
+            this.Controls.Add(this.leatiende);
             this.Controls.Add(this.perdido);
             this.Controls.Add(this.labelPaseCodigo);
             this.Controls.Add(this.logo);
@@ -306,11 +303,11 @@ namespace PoS
         private System.Windows.Forms.Label labelPaseCodigo;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.PictureBox perdido;
-        private System.Windows.Forms.Label nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        public System.Windows.Forms.Label leatiende;
     }
 }

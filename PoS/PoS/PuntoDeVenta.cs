@@ -26,6 +26,7 @@ namespace PoS
             InitializeComponent();
         }
 
+
         private void PuntoDeVenta_Load(object sender, EventArgs e)
         {
             labelBienvenida.Location = new Point(this.Width / 2 - labelBienvenida.Width / 2, 15);
@@ -54,7 +55,7 @@ namespace PoS
             tablaProductos.RowTemplate.Height = 60;
             tablaProductos.Columns[2].CellTemplate.Style.Alignment = DataGridViewContentAlignment.MiddleRight;
             tablaProductos.Columns[3].CellTemplate.Style.Alignment = DataGridViewContentAlignment.MiddleRight;
-            
+            leatiende.Visible = false;
 
             //codigo.Visible = false;
             //codigo.Location = new Point(10, this.Height - codigo.Height);
@@ -79,11 +80,11 @@ namespace PoS
                     tablaProductos.Rows.RemoveAt(tablaProductos.Rows.Count - 1);
                     CalcularTotal();
                 }
-                
-                
+
             }
             if (e.KeyChar == 13)
             {
+
                 String query = "SELECT * FROM productos WHERE producto_codigo =" + codigo.Text;
                 codigo.Text = "";
                 try
@@ -92,9 +93,12 @@ namespace PoS
                     mySqlConnection.Open();
                     MySqlCommand mySqlCommand = new MySqlCommand(query, mySqlConnection);
                     MySqlDataReader mySqlDataReader = mySqlCommand.ExecuteReader();
+
                     if (mySqlDataReader.HasRows)
-                    {
-                        nombre.Text = "Lo atiende: "+F1.nombre;
+                    {     
+                        leatiende.Visible = true;
+                        leatiende.Location = new Point(600, 934);
+                        
                         bandera = true;
                         tablaProductos.Visible = true;
                         labelTotal.Visible = true;
@@ -129,7 +133,6 @@ namespace PoS
                             tablaProductos.Rows.Add("1", mySqlDataReader.GetString(1), String.Format("{0:0.00}", mySqlDataReader.GetDouble(3)), String.Format("{0:0.00}", mySqlDataReader.GetDouble(3)), mySqlDataReader.GetDouble(0));
                         }
                         
-
                         CalcularTotal();
                         codigo.Clear();
                         codigo.Focus();
@@ -156,7 +159,6 @@ namespace PoS
                             timer2.Enabled = true;
                         }
                         
-                        
                     }
                 }
                 catch(Exception ex)
@@ -180,6 +182,7 @@ namespace PoS
                         String query = "INSERT INTO ventas VALUES (NULL, CURRENT_DATE(), CURRENT_TIME(), " + F1.id + ")";
                         MySqlCommand mySqlCommand = new MySqlCommand(query, mySqlConnection);
                         mySqlCommand.ExecuteNonQuery();
+
                         //obtenemos ultimo id de la venta
                         query = "SELECT LAST_INSERT_ID()";
                         mySqlCommand = new MySqlCommand(query, mySqlConnection);
@@ -243,15 +246,8 @@ namespace PoS
             labelTotal.Text = "Total: " + String.Format("{0:0.00}",total);
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
 		private void textBox1_KeyDown(object sender, KeyEventArgs e)
 		{
-
-
     
         }
 
@@ -289,6 +285,7 @@ namespace PoS
                         tablaProductos.Visible = false;
                         labelTotal.Visible = false;
                         labelTotal.Text = "";
+                        leatiende.Visible = false;
 
                         labelPaseCodigo.Visible = true;
 
@@ -306,21 +303,6 @@ namespace PoS
                 default:
                     break;
             }
-
-            
-            
-
-        }
-
-        private void tablaProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-            
-        }
-
-        private void tablaProductos_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void tablaProductos_KeyPress(object sender, KeyPressEventArgs e)
@@ -336,5 +318,6 @@ namespace PoS
                 }
             }
         }
+
     }
 }

@@ -839,19 +839,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yesica\\.nuget\\packages\\": {}
+    "C:\\Users\\Salmaiturbe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yesica\\Desktop\\linea\\Semestre_7\\Administración 2\\PoS - equipuo\\PoS\\PoS\\PoS.csproj",
+      "projectUniqueName": "C:\\Users\\Salmaiturbe\\Source\\Repos\\Punto_Venta\\PoS\\PoS\\PoS.csproj",
       "projectName": "PoS",
-      "projectPath": "C:\\Users\\Yesica\\Desktop\\linea\\Semestre_7\\Administración 2\\PoS - equipuo\\PoS\\PoS\\PoS.csproj",
-      "packagesPath": "C:\\Users\\Yesica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yesica\\Desktop\\linea\\Semestre_7\\Administración 2\\PoS - equipuo\\PoS\\PoS\\obj\\",
+      "projectPath": "C:\\Users\\Salmaiturbe\\Source\\Repos\\Punto_Venta\\PoS\\PoS\\PoS.csproj",
+      "packagesPath": "C:\\Users\\Salmaiturbe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Salmaiturbe\\Source\\Repos\\Punto_Venta\\PoS\\PoS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Yesica\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Salmaiturbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -900,7 +900,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
