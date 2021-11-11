@@ -30,13 +30,13 @@ namespace PoS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PuntoDeVenta));
             this.labelBienvenida = new System.Windows.Forms.Label();
             this.labelHoraFecha = new System.Windows.Forms.Label();
@@ -54,6 +54,7 @@ namespace PoS
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.perdido = new System.Windows.Forms.PictureBox();
             this.leatiende = new System.Windows.Forms.Label();
+            this.menuCaf = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tablaProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.perdido)).BeginInit();
@@ -65,9 +66,10 @@ namespace PoS
             this.labelBienvenida.BackColor = System.Drawing.Color.Transparent;
             this.labelBienvenida.Font = new System.Drawing.Font("Mat Saleh", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelBienvenida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.labelBienvenida.Location = new System.Drawing.Point(158, 18);
+            this.labelBienvenida.Location = new System.Drawing.Point(226, 30);
+            this.labelBienvenida.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBienvenida.Name = "labelBienvenida";
-            this.labelBienvenida.Size = new System.Drawing.Size(465, 34);
+            this.labelBienvenida.Size = new System.Drawing.Size(685, 50);
             this.labelBienvenida.TabIndex = 0;
             this.labelBienvenida.Text = "Bienvenido a Super del Sur";
             // 
@@ -76,9 +78,10 @@ namespace PoS
             this.labelHoraFecha.AutoSize = true;
             this.labelHoraFecha.Font = new System.Drawing.Font("Mat Saleh", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelHoraFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.labelHoraFecha.Location = new System.Drawing.Point(296, 403);
+            this.labelHoraFecha.Location = new System.Drawing.Point(423, 672);
+            this.labelHoraFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelHoraFecha.Name = "labelHoraFecha";
-            this.labelHoraFecha.Size = new System.Drawing.Size(178, 27);
+            this.labelHoraFecha.Size = new System.Drawing.Size(263, 40);
             this.labelHoraFecha.TabIndex = 2;
             this.labelHoraFecha.Text = "Hora y Fecha";
             // 
@@ -95,15 +98,15 @@ namespace PoS
             this.tablaProductos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.tablaProductos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(197)))), ((int)(((byte)(150)))));
             this.tablaProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(170)))), ((int)(((byte)(126)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tempus Sans ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(247)))), ((int)(((byte)(166)))));
-            dataGridViewCellStyle1.NullValue = null;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Olive;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(247)))), ((int)(((byte)(166)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tablaProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(170)))), ((int)(((byte)(126)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tempus Sans ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(247)))), ((int)(((byte)(166)))));
+            dataGridViewCellStyle8.NullValue = null;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Olive;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(247)))), ((int)(((byte)(166)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tablaProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.tablaProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tablaProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -113,67 +116,68 @@ namespace PoS
             this.id});
             this.tablaProductos.EnableHeadersVisualStyles = false;
             this.tablaProductos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.tablaProductos.Location = new System.Drawing.Point(57, 111);
+            this.tablaProductos.Location = new System.Drawing.Point(81, 185);
+            this.tablaProductos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tablaProductos.Name = "tablaProductos";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tempus Sans ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(247)))), ((int)(((byte)(166)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tablaProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Tempus Sans ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(247)))), ((int)(((byte)(166)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tablaProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.tablaProductos.RowHeadersVisible = false;
             this.tablaProductos.RowHeadersWidth = 51;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle7.NullValue = null;
-            this.tablaProductos.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle14.NullValue = null;
+            this.tablaProductos.RowsDefaultCellStyle = dataGridViewCellStyle14;
             this.tablaProductos.RowTemplate.Height = 60;
             this.tablaProductos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tablaProductos.Size = new System.Drawing.Size(328, 158);
+            this.tablaProductos.Size = new System.Drawing.Size(469, 263);
             this.tablaProductos.TabIndex = 3;
             this.tablaProductos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tablaProductos_KeyPress);
             // 
             // Column1
             // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tempus Sans ITC", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Tempus Sans ITC", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle9;
             this.Column1.HeaderText = "Cantidad";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tempus Sans ITC", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Tempus Sans ITC", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle10;
             this.Column2.HeaderText = "Producto";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tempus Sans ITC", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            dataGridViewCellStyle4.NullValue = null;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Tempus Sans ITC", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            dataGridViewCellStyle11.NullValue = null;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle11;
             this.Column3.HeaderText = "Precio";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             // 
             // Column4
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(160)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tempus Sans ITC", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(160)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Tempus Sans ITC", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle12;
             this.Column4.HeaderText = "Total";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
@@ -181,6 +185,7 @@ namespace PoS
             // id
             // 
             this.id.HeaderText = "id";
+            this.id.MinimumWidth = 8;
             this.id.Name = "id";
             this.id.Visible = false;
             // 
@@ -190,9 +195,10 @@ namespace PoS
             this.codigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.codigo.Font = new System.Drawing.Font("Tempus Sans ITC", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.codigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.codigo.Location = new System.Drawing.Point(473, 165);
+            this.codigo.Location = new System.Drawing.Point(676, 275);
+            this.codigo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.codigo.Name = "codigo";
-            this.codigo.Size = new System.Drawing.Size(100, 45);
+            this.codigo.Size = new System.Drawing.Size(142, 64);
             this.codigo.TabIndex = 4;
             this.codigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.codigo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
@@ -203,9 +209,10 @@ namespace PoS
             this.labelTotal.AutoSize = true;
             this.labelTotal.Font = new System.Drawing.Font("Mat Saleh", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.labelTotal.Location = new System.Drawing.Point(607, 275);
+            this.labelTotal.Location = new System.Drawing.Point(867, 458);
+            this.labelTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTotal.Name = "labelTotal";
-            this.labelTotal.Size = new System.Drawing.Size(107, 36);
+            this.labelTotal.Size = new System.Drawing.Size(161, 54);
             this.labelTotal.TabIndex = 5;
             this.labelTotal.Text = "Total";
             // 
@@ -214,10 +221,9 @@ namespace PoS
             this.logo.BackColor = System.Drawing.Color.Transparent;
             this.logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo.BackgroundImage")));
             this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logo.Location = new System.Drawing.Point(656, 46);
-            this.logo.Margin = new System.Windows.Forms.Padding(2);
+            this.logo.Location = new System.Drawing.Point(937, 77);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(105, 90);
+            this.logo.Size = new System.Drawing.Size(150, 150);
             this.logo.TabIndex = 6;
             this.logo.TabStop = false;
             // 
@@ -226,10 +232,9 @@ namespace PoS
             this.labelPaseCodigo.AutoSize = true;
             this.labelPaseCodigo.Font = new System.Drawing.Font("Mat Saleh", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelPaseCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.labelPaseCodigo.Location = new System.Drawing.Point(-1, 337);
-            this.labelPaseCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPaseCodigo.Location = new System.Drawing.Point(-1, 562);
             this.labelPaseCodigo.Name = "labelPaseCodigo";
-            this.labelPaseCodigo.Size = new System.Drawing.Size(851, 34);
+            this.labelPaseCodigo.Size = new System.Drawing.Size(1248, 50);
             this.labelPaseCodigo.TabIndex = 7;
             this.labelPaseCodigo.Text = "Por favor pase el codigo del producto en el escaner";
             // 
@@ -242,10 +247,9 @@ namespace PoS
             this.perdido.BackColor = System.Drawing.Color.Transparent;
             this.perdido.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("perdido.BackgroundImage")));
             this.perdido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.perdido.Location = new System.Drawing.Point(656, 151);
-            this.perdido.Margin = new System.Windows.Forms.Padding(2);
+            this.perdido.Location = new System.Drawing.Point(937, 252);
             this.perdido.Name = "perdido";
-            this.perdido.Size = new System.Drawing.Size(105, 90);
+            this.perdido.Size = new System.Drawing.Size(150, 150);
             this.perdido.TabIndex = 8;
             this.perdido.TabStop = false;
             this.perdido.Visible = false;
@@ -255,19 +259,32 @@ namespace PoS
             this.leatiende.AutoSize = true;
             this.leatiende.Font = new System.Drawing.Font("Mat Saleh", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.leatiende.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.leatiende.Location = new System.Drawing.Point(12, 52);
+            this.leatiende.Location = new System.Drawing.Point(17, 87);
+            this.leatiende.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.leatiende.Name = "leatiende";
-            this.leatiende.Size = new System.Drawing.Size(196, 35);
+            this.leatiende.Size = new System.Drawing.Size(298, 53);
             this.leatiende.TabIndex = 9;
             this.leatiende.Text = "Le atiende:";
             // 
+            // menuCaf
+            // 
+            this.menuCaf.BackgroundImage = global::PoS.Properties.Resources.menucaf;
+            this.menuCaf.Font = new System.Drawing.Font("Mat Saleh", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.menuCaf.Location = new System.Drawing.Point(723, 103);
+            this.menuCaf.Name = "menuCaf";
+            this.menuCaf.Size = new System.Drawing.Size(180, 100);
+            this.menuCaf.TabIndex = 10;
+            this.menuCaf.UseVisualStyleBackColor = true;
+            this.menuCaf.Click += new System.EventHandler(this.menuCaf_Click);
+            // 
             // PuntoDeVenta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1143, 750);
+            this.Controls.Add(this.menuCaf);
             this.Controls.Add(this.leatiende);
             this.Controls.Add(this.perdido);
             this.Controls.Add(this.labelPaseCodigo);
@@ -278,6 +295,7 @@ namespace PoS
             this.Controls.Add(this.labelHoraFecha);
             this.Controls.Add(this.labelBienvenida);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "PuntoDeVenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PuntoDeVenta";
@@ -309,5 +327,7 @@ namespace PoS
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         public System.Windows.Forms.Label leatiende;
+        private System.Windows.Forms.Label menuCafes;
+        private System.Windows.Forms.Button menuCaf;
     }
 }

@@ -260,3 +260,33 @@ C:\Users\Salmaiturbe\Source\Repos\Punto_Venta\PoS\PoS\obj\Debug\net5.0-windows\P
 C:\Users\Salmaiturbe\Source\Repos\Punto_Venta\PoS\PoS\obj\Debug\net5.0-windows\ref\PoS.dll
 C:\Users\Salmaiturbe\Source\Repos\Punto_Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.pdb
 C:\Users\Salmaiturbe\Source\Repos\Punto_Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.genruntimeconfig.cache
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\bin\Debug\net5.0-windows\PoS.exe
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\bin\Debug\net5.0-windows\PoS.deps.json
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.json
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\bin\Debug\net5.0-windows\PoS.runtimeconfig.dev.json
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\bin\Debug\net5.0-windows\PoS.dll
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\bin\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\bin\Debug\net5.0-windows\PoS.pdb
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\bin\Debug\net5.0-windows\Google.Protobuf.dll
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\bin\Debug\net5.0-windows\MySql.Data.dll
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\bin\Debug\net5.0-windows\Zstandard.Net.dll
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.AssemblyReference.cache
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.Form1.resources
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.Form2.resources
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.Properties.Resources.resources
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.PuntoDeVenta.resources
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.GenerateResource.cache
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfoInputs.cache
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.AssemblyInfo.cs
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CoreCompileInputs.cache
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.CopyComplete
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.dll
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\ref\PoS.dll
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.pdb
+C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.genruntimeconfig.cache

@@ -63,7 +63,11 @@ namespace PoS
             codigo.Width = 300;
 
             labelTotal.Visible = false;
-            labelTotal.Location = new Point(this.Width-labelTotal.Width-250, tablaProductos.Location.Y + tablaProductos.Height+10);
+            labelTotal.Location = new Point(this.Width - labelTotal.Width - 250, tablaProductos.Location.Y + tablaProductos.Height + 10);
+
+            menuCaf.Visible = false;
+            menuCaf.Location = new Point(150,10);
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -97,7 +101,7 @@ namespace PoS
                     if (mySqlDataReader.HasRows)
                     {     
                         leatiende.Visible = true;
-                        leatiende.Location = new Point(600, 934);
+                        leatiende.Location = new Point(200, tablaProductos.Location.Y + tablaProductos.Height + 15);
                         
                         bandera = true;
                         tablaProductos.Visible = true;
@@ -106,11 +110,13 @@ namespace PoS
                         labelPaseCodigo.Visible = false;
 
                         codigo.Location = new Point(20, tablaProductos.Location.Y + tablaProductos.Height+15);
-                        codigo.Width = 500;
+                        codigo.Width = 150;
 
                         logo.Width = 100;
                         logo.Height = 100;
                         logo.Location = new Point(15,10);
+
+                        menuCaf.Visible = true;
 
                         mySqlDataReader.Read();
                         Boolean producto_rep = false;
@@ -286,6 +292,7 @@ namespace PoS
                         labelTotal.Visible = false;
                         labelTotal.Text = "";
                         leatiende.Visible = false;
+                        menuCaf.Visible = false;
 
                         labelPaseCodigo.Visible = true;
 
@@ -319,5 +326,9 @@ namespace PoS
             }
         }
 
+        private void menuCaf_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -839,19 +839,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Salmaiturbe\\.nuget\\packages\\": {}
+    "C:\\Users\\denia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Salmaiturbe\\Source\\Repos\\Punto_Venta\\PoS\\PoS\\PoS.csproj",
+      "projectUniqueName": "C:\\Users\\denia\\Desktop\\workplace\\admin\\Punto_ Venta\\PoS\\PoS\\PoS.csproj",
       "projectName": "PoS",
-      "projectPath": "C:\\Users\\Salmaiturbe\\Source\\Repos\\Punto_Venta\\PoS\\PoS\\PoS.csproj",
-      "packagesPath": "C:\\Users\\Salmaiturbe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Salmaiturbe\\Source\\Repos\\Punto_Venta\\PoS\\PoS\\obj\\",
+      "projectPath": "C:\\Users\\denia\\Desktop\\workplace\\admin\\Punto_ Venta\\PoS\\PoS\\PoS.csproj",
+      "packagesPath": "C:\\Users\\denia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\denia\\Desktop\\workplace\\admin\\Punto_ Venta\\PoS\\PoS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Salmaiturbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\denia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -900,7 +900,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
