@@ -13,7 +13,7 @@ namespace PoS
 {
     public partial class PuntoDeVenta : Form
     {
-        Form2 F2 = new Form2();
+        //Form2 F2 = new Form2();
         Form1 F1 = new Form1();
         private double total = 0.0;
         private double cambio =0.0;
@@ -242,7 +242,7 @@ namespace PoS
             }
         }
 
-        private void CalcularTotal()
+        public void CalcularTotal()
         {
             total = 0;
             for (int i = 0; i < tablaProductos.Rows.Count; i++)
@@ -328,7 +328,99 @@ namespace PoS
 
         private void menuCaf_Click(object sender, EventArgs e)
         {
+            Form2 ventanaCafe = new Form2();
+            ventanaCafe.ShowDialog();
 
+            String query = "SELECT * FROM productos WHERE producto_codigo =" + ventanaCafe.codCafe;
+            //MessageBox.Show(query);
+            if (ventanaCafe.codCafe == "")
+            {}
+            else {
+                try
+                {
+                    MySqlConnection mySqlConnection = new MySqlConnection("server=127.0.0.1; user=root; database=verificador_de_precios_2; SSL mode=none");
+                    mySqlConnection.Open();
+                    MySqlCommand mySqlCommand = new MySqlCommand(query, mySqlConnection);
+                    MySqlDataReader mySqlDataReader = mySqlCommand.ExecuteReader();
+
+                    if (mySqlDataReader.HasRows)
+                    {
+                        leatiende.Visible = true;
+                        leatiende.Location = new Point(200, tablaProductos.Location.Y + tablaProductos.Height + 15);
+
+                        bandera = true;
+                        tablaProductos.Visible = true;
+                        labelTotal.Visible = true;
+
+                        labelPaseCodigo.Visible = false;
+
+                        codigo.Location = new Point(20, tablaProductos.Location.Y + tablaProductos.Height + 15);
+                        codigo.Width = 150;
+
+                        logo.Width = 100;
+                        logo.Height = 100;
+                        logo.Location = new Point(15, 10);
+
+                        menuCaf.Visible = true;
+
+                        mySqlDataReader.Read();
+                        Boolean producto_rep = false;
+                        foreach (DataGridViewRow row in tablaProductos.Rows)
+                        {
+                            if (mySqlDataReader.GetString(1) == Convert.ToString(row.Cells[1].Value))
+                            {
+                                producto_rep = true;
+                                row.Cells[0].Value = Convert.ToInt32(row.Cells[0].Value) + 1;
+
+                                row.Cells[3].Value = String.Format("{0:0.00}", Convert.ToDouble(row.Cells[0].Value) * Convert.ToDouble(row.Cells[2].Value));
+                                break;
+                            }
+                            else
+                            {
+                                producto_rep = false;
+                            }
+                        }
+                        if (!producto_rep)
+                        {
+                            tablaProductos.Rows.Add("1", mySqlDataReader.GetString(1), String.Format("{0:0.00}", mySqlDataReader.GetDouble(3)), String.Format("{0:0.00}", mySqlDataReader.GetDouble(3)), mySqlDataReader.GetDouble(0));
+                        }
+
+                        CalcularTotal();
+                        codigo.Clear();
+                        codigo.Focus();
+                    }
+                    else
+                    {
+                        if (bandera)
+                        {
+                            MessageBox.Show($"Producto no encontrado. Intente nuevamente");
+                        }
+                        else
+                        {
+                            logo.Width = 100;
+                            logo.Height = 100;
+                            logo.Location = new Point(15, 20);
+
+                            codigo.Visible = false;
+                            perdido.Visible = true;
+
+                            labelPaseCodigo.Text = "Producto no encontrado. Intente nuevamente";
+
+                            segundos = 0;
+                            timer = 15;
+                            timer2.Enabled = true;
+                        }
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }
         }
+        
+
+    
     }
 }
