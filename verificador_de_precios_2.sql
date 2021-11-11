@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 10-11-2021 a las 02:23:32
--- Versión del servidor: 10.4.20-MariaDB
--- Versión de PHP: 8.0.9
+-- Host: 127.0.0.1
+-- Generation Time: Nov 11, 2021 at 09:49 PM
+-- Server version: 10.4.20-MariaDB
+-- PHP Version: 8.0.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `verificador_de_precios_2`
+-- Database: `verificador_de_precios_2`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `productos`
+-- Table structure for table `productos`
 --
 
 CREATE TABLE `productos` (
@@ -36,7 +36,7 @@ CREATE TABLE `productos` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `productos`
+-- Dumping data for table `productos`
 --
 
 INSERT INTO `productos` (`producto_codigo`, `producto_nombre`, `producto_cantidad`, `producto_precio`, `producto_imagen`) VALUES
@@ -59,12 +59,15 @@ INSERT INTO `productos` (`producto_codigo`, `producto_nombre`, `producto_cantida
 (517, 'Emperador', 11, 13.90, 'https://gamesa.com.mx/recetas/storage/app/uploads/public/5ff/61c/24b/5ff61c24b2995763435832.png'),
 (518, 'Polvorones', 14, 13.90, 'https://s.cornershopapp.com/product-images/383117.png'),
 (519, 'Arcoiris', 15, 14.90, 'https://cdn.shopify.com/s/files/1/0706/6309/products/work235676_1142x.jpg'),
-(520, 'Canelitas', 15, 14.90, 'https://lagranbodega.vteximg.com.br/arquivos/ids/215407-600-600/7501030491644_1.jpg');
+(520, 'Canelitas', 15, 14.90, 'https://lagranbodega.vteximg.com.br/arquivos/ids/215407-600-600/7501030491644_1.jpg'),
+(101, 'Cafe chico', 0, 22.00, NULL),
+(102, 'Cafe mediano', 0, 28.00, NULL),
+(103, 'Cafe grande', 0, 35.00, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Table structure for table `usuarios`
 --
 
 CREATE TABLE `usuarios` (
@@ -77,7 +80,7 @@ CREATE TABLE `usuarios` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `usuarios`
+-- Dumping data for table `usuarios`
 --
 
 INSERT INTO `usuarios` (`numero_de_empleado`, `nombre`, `apellido1`, `apellido2`, `rol`, `pws`) VALUES
@@ -99,7 +102,7 @@ INSERT INTO `usuarios` (`numero_de_empleado`, `nombre`, `apellido1`, `apellido2`
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `ventas`
+-- Table structure for table `ventas`
 --
 
 CREATE TABLE `ventas` (
@@ -110,17 +113,20 @@ CREATE TABLE `ventas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `ventas`
+-- Dumping data for table `ventas`
 --
 
 INSERT INTO `ventas` (`idventa`, `fechaventa`, `horaventa`, `operadorVenta`) VALUES
 (7, '2021-11-09', '18:02:32', 0),
-(8, '2021-11-09', '18:09:58', 0);
+(8, '2021-11-09', '18:09:58', 0),
+(9, '2021-11-10', '12:10:26', 0),
+(10, '2021-11-11', '10:49:19', 0),
+(11, '2021-11-11', '13:41:52', 0);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `ventas_detalle`
+-- Table structure for table `ventas_detalle`
 --
 
 CREATE TABLE `ventas_detalle` (
@@ -131,45 +137,54 @@ CREATE TABLE `ventas_detalle` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `ventas_detalle`
+-- Dumping data for table `ventas_detalle`
 --
 
 INSERT INTO `ventas_detalle` (`id_venta`, `id_producto`, `cantidad`, `precio_producto`) VALUES
-(8, 506, 1, 17.9);
+(8, 506, 1, 17.9),
+(9, 505, 1, 17.9),
+(9, 506, 1, 17.9),
+(9, 507, 1, 17.9),
+(10, 506, 1, 17.9),
+(10, 502, 2, 18.9),
+(10, 503, 1, 20.9),
+(11, 506, 1, 17.9),
+(11, 507, 1, 17.9),
+(11, 103, 2, 35);
 
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `productos`
+-- Indexes for table `productos`
 --
 ALTER TABLE `productos`
   ADD UNIQUE KEY `producto_codigo` (`producto_codigo`);
 
 --
--- Indices de la tabla `usuarios`
+-- Indexes for table `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`numero_de_empleado`),
   ADD UNIQUE KEY `numero_de_empleado` (`numero_de_empleado`);
 
 --
--- Indices de la tabla `ventas`
+-- Indexes for table `ventas`
 --
 ALTER TABLE `ventas`
   ADD UNIQUE KEY `idventa` (`idventa`),
   ADD KEY `operadorVenta` (`operadorVenta`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `ventas`
+-- AUTO_INCREMENT for table `ventas`
 --
 ALTER TABLE `ventas`
-  MODIFY `idventa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `idventa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
