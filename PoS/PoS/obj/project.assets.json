@@ -839,19 +839,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\denia\\.nuget\\packages\\": {}
+    "C:\\Users\\Yesica\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\denia\\Desktop\\workplace\\admin\\Punto_ Venta\\PoS\\PoS\\PoS.csproj",
+      "projectUniqueName": "C:\\Users\\Yesica\\Desktop\\linea\\Semestre_7\\Administración 2\\PoS - equipuo\\PoS\\PoS\\PoS.csproj",
       "projectName": "PoS",
-      "projectPath": "C:\\Users\\denia\\Desktop\\workplace\\admin\\Punto_ Venta\\PoS\\PoS\\PoS.csproj",
-      "packagesPath": "C:\\Users\\denia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\denia\\Desktop\\workplace\\admin\\Punto_ Venta\\PoS\\PoS\\obj\\",
+      "projectPath": "C:\\Users\\Yesica\\Desktop\\linea\\Semestre_7\\Administración 2\\PoS - equipuo\\PoS\\PoS\\PoS.csproj",
+      "packagesPath": "C:\\Users\\Yesica\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Yesica\\Desktop\\linea\\Semestre_7\\Administración 2\\PoS - equipuo\\PoS\\PoS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\denia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Yesica\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -66,10 +66,9 @@ namespace PoS
             this.labelBienvenida.BackColor = System.Drawing.Color.Transparent;
             this.labelBienvenida.Font = new System.Drawing.Font("Mat Saleh", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelBienvenida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.labelBienvenida.Location = new System.Drawing.Point(226, 30);
-            this.labelBienvenida.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelBienvenida.Location = new System.Drawing.Point(158, 18);
             this.labelBienvenida.Name = "labelBienvenida";
-            this.labelBienvenida.Size = new System.Drawing.Size(685, 50);
+            this.labelBienvenida.Size = new System.Drawing.Size(465, 34);
             this.labelBienvenida.TabIndex = 0;
             this.labelBienvenida.Text = "Bienvenido a Super del Sur";
             // 
@@ -78,10 +77,9 @@ namespace PoS
             this.labelHoraFecha.AutoSize = true;
             this.labelHoraFecha.Font = new System.Drawing.Font("Mat Saleh", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelHoraFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.labelHoraFecha.Location = new System.Drawing.Point(423, 672);
-            this.labelHoraFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelHoraFecha.Location = new System.Drawing.Point(296, 403);
             this.labelHoraFecha.Name = "labelHoraFecha";
-            this.labelHoraFecha.Size = new System.Drawing.Size(263, 40);
+            this.labelHoraFecha.Size = new System.Drawing.Size(178, 27);
             this.labelHoraFecha.TabIndex = 2;
             this.labelHoraFecha.Text = "Hora y Fecha";
             // 
@@ -116,8 +114,7 @@ namespace PoS
             this.id});
             this.tablaProductos.EnableHeadersVisualStyles = false;
             this.tablaProductos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.tablaProductos.Location = new System.Drawing.Point(81, 185);
-            this.tablaProductos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tablaProductos.Location = new System.Drawing.Point(57, 111);
             this.tablaProductos.Name = "tablaProductos";
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightSeaGreen;
@@ -134,7 +131,7 @@ namespace PoS
             this.tablaProductos.RowsDefaultCellStyle = dataGridViewCellStyle7;
             this.tablaProductos.RowTemplate.Height = 60;
             this.tablaProductos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tablaProductos.Size = new System.Drawing.Size(469, 263);
+            this.tablaProductos.Size = new System.Drawing.Size(328, 158);
             this.tablaProductos.TabIndex = 3;
             this.tablaProductos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tablaProductos_KeyPress);
             // 
@@ -195,10 +192,9 @@ namespace PoS
             this.codigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.codigo.Font = new System.Drawing.Font("Tempus Sans ITC", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.codigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.codigo.Location = new System.Drawing.Point(676, 275);
-            this.codigo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.codigo.Location = new System.Drawing.Point(473, 165);
             this.codigo.Name = "codigo";
-            this.codigo.Size = new System.Drawing.Size(142, 64);
+            this.codigo.Size = new System.Drawing.Size(100, 45);
             this.codigo.TabIndex = 4;
             this.codigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.codigo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
@@ -209,10 +205,9 @@ namespace PoS
             this.labelTotal.AutoSize = true;
             this.labelTotal.Font = new System.Drawing.Font("Mat Saleh", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.labelTotal.Location = new System.Drawing.Point(867, 458);
-            this.labelTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTotal.Location = new System.Drawing.Point(607, 275);
             this.labelTotal.Name = "labelTotal";
-            this.labelTotal.Size = new System.Drawing.Size(161, 54);
+            this.labelTotal.Size = new System.Drawing.Size(107, 36);
             this.labelTotal.TabIndex = 5;
             this.labelTotal.Text = "Total";
             // 
@@ -221,9 +216,10 @@ namespace PoS
             this.logo.BackColor = System.Drawing.Color.Transparent;
             this.logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo.BackgroundImage")));
             this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logo.Location = new System.Drawing.Point(937, 77);
+            this.logo.Location = new System.Drawing.Point(656, 46);
+            this.logo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(150, 150);
+            this.logo.Size = new System.Drawing.Size(105, 90);
             this.logo.TabIndex = 6;
             this.logo.TabStop = false;
             // 
@@ -232,9 +228,10 @@ namespace PoS
             this.labelPaseCodigo.AutoSize = true;
             this.labelPaseCodigo.Font = new System.Drawing.Font("Mat Saleh", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelPaseCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.labelPaseCodigo.Location = new System.Drawing.Point(-1, 562);
+            this.labelPaseCodigo.Location = new System.Drawing.Point(-1, 337);
+            this.labelPaseCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPaseCodigo.Name = "labelPaseCodigo";
-            this.labelPaseCodigo.Size = new System.Drawing.Size(1248, 50);
+            this.labelPaseCodigo.Size = new System.Drawing.Size(851, 34);
             this.labelPaseCodigo.TabIndex = 7;
             this.labelPaseCodigo.Text = "Por favor pase el codigo del producto en el escaner";
             // 
@@ -247,9 +244,10 @@ namespace PoS
             this.perdido.BackColor = System.Drawing.Color.Transparent;
             this.perdido.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("perdido.BackgroundImage")));
             this.perdido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.perdido.Location = new System.Drawing.Point(937, 252);
+            this.perdido.Location = new System.Drawing.Point(656, 151);
+            this.perdido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.perdido.Name = "perdido";
-            this.perdido.Size = new System.Drawing.Size(150, 150);
+            this.perdido.Size = new System.Drawing.Size(105, 90);
             this.perdido.TabIndex = 8;
             this.perdido.TabStop = false;
             this.perdido.Visible = false;
@@ -259,31 +257,32 @@ namespace PoS
             this.leatiende.AutoSize = true;
             this.leatiende.Font = new System.Drawing.Font("Mat Saleh", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.leatiende.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.leatiende.Location = new System.Drawing.Point(17, 87);
-            this.leatiende.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.leatiende.Location = new System.Drawing.Point(12, 52);
             this.leatiende.Name = "leatiende";
-            this.leatiende.Size = new System.Drawing.Size(298, 53);
+            this.leatiende.Size = new System.Drawing.Size(196, 35);
             this.leatiende.TabIndex = 9;
             this.leatiende.Text = "Le atiende:";
             // 
             // menuCaf
             // 
             this.menuCaf.BackgroundImage = global::PoS.Properties.Resources.menucaf;
+            this.menuCaf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.menuCaf.Font = new System.Drawing.Font("Mat Saleh", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.menuCaf.Location = new System.Drawing.Point(723, 103);
+            this.menuCaf.Location = new System.Drawing.Point(506, 62);
+            this.menuCaf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.menuCaf.Name = "menuCaf";
-            this.menuCaf.Size = new System.Drawing.Size(180, 100);
+            this.menuCaf.Size = new System.Drawing.Size(126, 60);
             this.menuCaf.TabIndex = 10;
             this.menuCaf.UseVisualStyleBackColor = true;
             this.menuCaf.Click += new System.EventHandler(this.menuCaf_Click);
             // 
             // PuntoDeVenta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1143, 750);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuCaf);
             this.Controls.Add(this.leatiende);
             this.Controls.Add(this.perdido);
@@ -295,7 +294,6 @@ namespace PoS
             this.Controls.Add(this.labelHoraFecha);
             this.Controls.Add(this.labelBienvenida);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "PuntoDeVenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PuntoDeVenta";

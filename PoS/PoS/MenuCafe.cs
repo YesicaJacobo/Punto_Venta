@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace PoS
 {
-    public partial class Form2 : Form
+    public partial class MenuCafe : Form
 
     {
         public String codCafe="";
 
-        public Form2()
+        public MenuCafe()
         {
             InitializeComponent();
             ToolTip tipoCafe = new ToolTip();

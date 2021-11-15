@@ -14,19 +14,22 @@ namespace PoS
     public partial class PuntoDeVenta : Form
     {
         //Form2 F2 = new Form2();
-        Form1 F1 = new Form1();
+        Ticket T = new Ticket();
+        InicioSesion F1 = new InicioSesion();
         private double total = 0.0;
         private double cambio =0.0;
         private int segundos = 0;
         private int timer = 0;
         private int index = -1;
         private Boolean bandera = false;
+        public int idU;
+        public String nomU;
         public PuntoDeVenta()
         {
             InitializeComponent();
         }
 
-
+        
         private void PuntoDeVenta_Load(object sender, EventArgs e)
         {
             labelBienvenida.Location = new Point(this.Width / 2 - labelBienvenida.Width / 2, 15);
@@ -67,7 +70,7 @@ namespace PoS
 
             menuCaf.Visible = false;
             menuCaf.Location = new Point(150,10);
-
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -137,6 +140,7 @@ namespace PoS
                         if (!producto_rep)
                         {
                             tablaProductos.Rows.Add("1", mySqlDataReader.GetString(1), String.Format("{0:0.00}", mySqlDataReader.GetDouble(3)), String.Format("{0:0.00}", mySqlDataReader.GetDouble(3)), mySqlDataReader.GetDouble(0));
+                            
                         }
                         
                         CalcularTotal();
@@ -185,7 +189,7 @@ namespace PoS
                     {
                         MySqlConnection mySqlConnection = new MySqlConnection("server=127.0.0.1; user=root; database=verificador_de_precios_2; SSL mode=none");
                         mySqlConnection.Open();
-                        String query = "INSERT INTO ventas VALUES (NULL, CURRENT_DATE(), CURRENT_TIME(), " + F1.id + ")";
+                        String query = "INSERT INTO ventas VALUES (NULL, CURRENT_DATE(), CURRENT_TIME(), " + idU + ")";
                         MySqlCommand mySqlCommand = new MySqlCommand(query, mySqlConnection);
                         mySqlCommand.ExecuteNonQuery();
 
@@ -211,6 +215,8 @@ namespace PoS
                                 "," + tablaProductos[2, i].Value.ToString() + " ) ";
                             mySqlCommand = new MySqlCommand(query, mySqlConnection);
                             mySqlCommand.ExecuteNonQuery();
+
+                            T.tablaProductos.Rows.Add(tablaProductos[1, i].Value.ToString(), tablaProductos[0, i].Value.ToString(), tablaProductos[2, i].Value.ToString(), tablaProductos[3, i].Value.ToString(), tablaProductos[4, i].Value.ToString());
                         }
                     }
                     catch (Exception error)
@@ -218,12 +224,16 @@ namespace PoS
                         MessageBox.Show("Error añadiendo venta a la tabla " + error.ToString());
                     }
 
-                    MessageBox.Show("\n|---------------------------------------------------------------|" +
-                                   $"\n|                              Total: {total}                                     |"+
-                                   $"\n|                              Cambio: {cambio}                                  |"+ 
-                                   $"\n| Gracias por su compra vuelva pronto (^-^)/           |"+
-                                    "\n|---------------------------------------------------------------|");
+                    T.Ttotal = total;
+                    T.Tefectivo = Convert.ToDouble(codigo.Text);
+                    T.Tcambio = cambio;
+                    T.Tcajero = nomU;
 
+                    this.Hide();
+                    T.ShowDialog();
+                    this.Show();
+
+                    T.tablaProductos.Rows.Clear();
                     tablaProductos.Rows.Clear();
                     codigo.Clear();
                     codigo.Focus();
@@ -328,7 +338,7 @@ namespace PoS
 
         private void menuCaf_Click(object sender, EventArgs e)
         {
-            Form2 ventanaCafe = new Form2();
+            MenuCafe ventanaCafe = new MenuCafe();
             ventanaCafe.ShowDialog();
 
             String query = "SELECT * FROM productos WHERE producto_codigo =" + ventanaCafe.codCafe;

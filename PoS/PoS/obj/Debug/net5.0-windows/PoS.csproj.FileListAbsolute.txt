@@ -218,7 +218,6 @@ C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS
 C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
 C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\bin\Debug\net5.0-windows\Zstandard.Net.dll
 C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.AssemblyReference.cache
-C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.Form1.resources
 C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.Properties.Resources.resources
 C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.PuntoDeVenta.resources
 C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.csproj.GenerateResource.cache
@@ -290,3 +289,7 @@ C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-win
 C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\ref\PoS.dll
 C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.pdb
 C:\Users\denia\Desktop\workplace\admin\Punto_ Venta\PoS\PoS\obj\Debug\net5.0-windows\PoS.genruntimeconfig.cache
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.InicioSesion.resources
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.MenuCafe.resources
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.SistemaAdmin.resources
+C:\Users\Yesica\Desktop\linea\Semestre_7\Administración 2\PoS - equipuo\PoS\PoS\obj\Debug\net5.0-windows\PoS.Ticket.resources

@@ -11,13 +11,13 @@ using MySql.Data.MySqlClient;
 
 namespace PoS
 {
-    public partial class Form1 : Form
+    public partial class InicioSesion : Form
     {
         public String nombre;
         public int id;
 
 
-        public Form1()
+        public InicioSesion()
         {
             InitializeComponent();
         }
@@ -63,13 +63,30 @@ namespace PoS
 
                                 nombre = mySqlDataReader.GetString(1) + " " + mySqlDataReader.GetString(2) + " " + mySqlDataReader.GetString(3);
                                 id = Convert.ToInt32(mySqlDataReader.GetString(0));
-                                MessageBox.Show(id+" "+nombre);
+                                
+                                if (mySqlDataReader["rol"].ToString().Equals("1"))
+                                {
+                                    MessageBox.Show("Bienvenido al \"punto de venta\": \n" + id + " " + nombre);
+                                    PuntoDeVenta PV = new PuntoDeVenta();
+                                    PV.leatiende.Text = "Le atiende: " + nombre;
+                                    PV.idU = id;
+                                    PV.nomU = nombre;
 
-                                PuntoDeVenta PV = new PuntoDeVenta();                        
-                                PV.leatiende.Text="Le atiende: "+nombre;
+                                    this.Hide();
+                                    PV.ShowDialog();
+                                    this.Show();
+                            }
+                                else {
+                                    MessageBox.Show("Bienvenido al \"sistema de administración\": \n" + id + " " + nombre);
+                                    SistemaAdmin PA = new SistemaAdmin();
+                                    PA.admin.Text = "Admin: " + nombre;
 
-                                PV.Show();
-                                this.Hide();
+                                    this.Hide();
+                                    PA.ShowDialog();
+                                    this.Show();
+                            }
+                            
+                               
                                 
                             }
                             
@@ -95,9 +112,10 @@ namespace PoS
             }
         }
 
-        public Form1(String nomUsuario)
+        public InicioSesion(String nomUsuario, int idUsuario)
         {
             nomUsuario = nombre;
+            idUsuario = id;
         }
     }
 }
