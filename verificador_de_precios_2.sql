@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Nov 11, 2021 at 09:49 PM
--- Server version: 10.4.20-MariaDB
--- PHP Version: 8.0.9
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 15-11-2021 a las 01:26:07
+-- Versión del servidor: 10.4.20-MariaDB
+-- Versión de PHP: 8.0.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `verificador_de_precios_2`
+-- Base de datos: `verificador_de_precios_2`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `productos`
+-- Estructura de tabla para la tabla `productos`
 --
 
 CREATE TABLE `productos` (
@@ -36,7 +36,7 @@ CREATE TABLE `productos` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `productos`
+-- Volcado de datos para la tabla `productos`
 --
 
 INSERT INTO `productos` (`producto_codigo`, `producto_nombre`, `producto_cantidad`, `producto_precio`, `producto_imagen`) VALUES
@@ -67,7 +67,7 @@ INSERT INTO `productos` (`producto_codigo`, `producto_nombre`, `producto_cantida
 -- --------------------------------------------------------
 
 --
--- Table structure for table `usuarios`
+-- Estructura de tabla para la tabla `usuarios`
 --
 
 CREATE TABLE `usuarios` (
@@ -80,7 +80,7 @@ CREATE TABLE `usuarios` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `usuarios`
+-- Volcado de datos para la tabla `usuarios`
 --
 
 INSERT INTO `usuarios` (`numero_de_empleado`, `nombre`, `apellido1`, `apellido2`, `rol`, `pws`) VALUES
@@ -102,7 +102,7 @@ INSERT INTO `usuarios` (`numero_de_empleado`, `nombre`, `apellido1`, `apellido2`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ventas`
+-- Estructura de tabla para la tabla `ventas`
 --
 
 CREATE TABLE `ventas` (
@@ -113,7 +113,7 @@ CREATE TABLE `ventas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `ventas`
+-- Volcado de datos para la tabla `ventas`
 --
 
 INSERT INTO `ventas` (`idventa`, `fechaventa`, `horaventa`, `operadorVenta`) VALUES
@@ -127,12 +127,18 @@ INSERT INTO `ventas` (`idventa`, `fechaventa`, `horaventa`, `operadorVenta`) VAL
 (8, '2021-11-09', '18:09:58', 4),
 (9, '2021-11-10', '12:10:26', 4),
 (10, '2021-11-11', '10:49:19', 1),
-(11, '2021-11-11', '13:41:52', 1);
+(11, '2021-11-11', '13:41:52', 1),
+(12, '2021-11-14', '14:10:53', 1),
+(13, '2021-11-14', '16:35:51', 5),
+(14, '2021-11-14', '16:44:55', 5),
+(15, '2021-11-14', '16:59:07', 9),
+(16, '2021-11-14', '17:10:56', 10),
+(17, '2021-11-14', '17:19:05', 8);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ventas_detalle`
+-- Estructura de tabla para la tabla `ventas_detalle`
 --
 
 CREATE TABLE `ventas_detalle` (
@@ -143,7 +149,7 @@ CREATE TABLE `ventas_detalle` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `ventas_detalle`
+-- Volcado de datos para la tabla `ventas_detalle`
 --
 
 INSERT INTO `ventas_detalle` (`id_venta`, `id_producto`, `cantidad`, `precio_producto`) VALUES
@@ -169,41 +175,61 @@ INSERT INTO `ventas_detalle` (`id_venta`, `id_producto`, `cantidad`, `precio_pro
 (10, 503, 1, 20.9),
 (11, 506, 1, 17.9),
 (11, 507, 1, 17.9),
-(11, 103, 2, 35);
+(11, 103, 2, 35),
+(12, 502, 1, 18.9),
+(12, 102, 1, 28),
+(12, 509, 1, 11.9),
+(12, 101, 1, 22),
+(12, 103, 1, 35),
+(13, 509, 1, 11.9),
+(13, 508, 1, 24.9),
+(13, 511, 1, 12.9),
+(13, 103, 1, 35),
+(13, 102, 1, 28),
+(14, 509, 1, 11.9),
+(14, 501, 1, 17.9),
+(15, 520, 2, 14.9),
+(16, 509, 1, 11.9),
+(17, 508, 1, 24.9),
+(17, 509, 1, 11.9),
+(17, 511, 2, 12.9),
+(17, 516, 1, 14.9),
+(17, 103, 1, 35),
+(17, 514, 1, 14.9);
 
 --
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `productos`
+-- Indices de la tabla `productos`
 --
 ALTER TABLE `productos`
   ADD UNIQUE KEY `producto_codigo` (`producto_codigo`);
 
 --
--- Indexes for table `usuarios`
+-- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`numero_de_empleado`),
   ADD UNIQUE KEY `numero_de_empleado` (`numero_de_empleado`);
 
 --
--- Indexes for table `ventas`
+-- Indices de la tabla `ventas`
 --
 ALTER TABLE `ventas`
   ADD UNIQUE KEY `idventa` (`idventa`),
   ADD KEY `operadorVenta` (`operadorVenta`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `ventas`
+-- AUTO_INCREMENT de la tabla `ventas`
 --
 ALTER TABLE `ventas`
-  MODIFY `idventa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `idventa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
