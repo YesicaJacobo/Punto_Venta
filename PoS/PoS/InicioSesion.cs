@@ -46,7 +46,7 @@ namespace PoS
                 alerta.Visible = false;
                 usuario.BackColor = System.Drawing.ColorTranslator.FromHtml("#90EE90");
                 contraseña.BackColor = System.Drawing.ColorTranslator.FromHtml("#90EE90");
-                String query = "SELECT * FROM usuarios WHERE numero_de_empleado ="+usuario.Text+" AND pws ="+contraseña.Text;
+                String query = "SELECT * FROM usuarios WHERE id_usuario ="+usuario.Text+" AND pws ="+contraseña.Text;
 
                     try
                     {
@@ -61,10 +61,13 @@ namespace PoS
 
                             while (mySqlDataReader.Read()) {
 
-                                nombre = mySqlDataReader.GetString(1) + " " + mySqlDataReader.GetString(2) + " " + mySqlDataReader.GetString(3);
+                                nombre = mySqlDataReader.GetString(1) + " " + mySqlDataReader.GetString(2);
                                 id = Convert.ToInt32(mySqlDataReader.GetString(0));
-                                
-                                if (mySqlDataReader["rol"].ToString().Equals("1"))
+
+                                usuario.Text = "";
+                                contraseña.Text = "";
+
+                                if (mySqlDataReader["permisosUsuario"].ToString().Equals("1"))
                                 {
                                     MessageBox.Show("Bienvenido al \"punto de venta\": \n" + id + " " + nombre);
                                     PuntoDeVenta PV = new PuntoDeVenta();

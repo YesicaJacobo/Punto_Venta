@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-11-2021 a las 01:26:07
+-- Tiempo de generación: 21-11-2021 a las 04:31:11
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 8.0.9
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `productos` (
-  `producto_codigo` bigint(13) UNSIGNED NOT NULL,
+  `id_producto` bigint(13) UNSIGNED NOT NULL,
   `producto_nombre` varchar(255) NOT NULL,
   `producto_cantidad` smallint(9) UNSIGNED NOT NULL,
   `producto_precio` double(10,2) UNSIGNED NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE `productos` (
 -- Volcado de datos para la tabla `productos`
 --
 
-INSERT INTO `productos` (`producto_codigo`, `producto_nombre`, `producto_cantidad`, `producto_precio`, `producto_imagen`) VALUES
+INSERT INTO `productos` (`id_producto`, `producto_nombre`, `producto_cantidad`, `producto_precio`, `producto_imagen`) VALUES
 (501, 'Coca-cola', 20, 17.90, 'https://m.media-amazon.com/images/I/5156FefjlqL._SX425_.jpg'),
 (502, 'Takis Fuego', 14, 18.90, 'https://www.barcel.com.mx/sites/default/files/takis_fuego.png'),
 (503, 'Dr Pepper', 12, 20.90, 'https://munchiezonline.co.za/wp-content/uploads/2021/07/Dr-Pepper.png'),
@@ -71,11 +71,10 @@ INSERT INTO `productos` (`producto_codigo`, `producto_nombre`, `producto_cantida
 --
 
 CREATE TABLE `usuarios` (
-  `numero_de_empleado` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
   `nombre` varchar(51) DEFAULT NULL,
-  `apellido1` varchar(51) DEFAULT NULL,
-  `apellido2` varchar(51) DEFAULT NULL,
-  `rol` int(254) NOT NULL,
+  `apellido` varchar(51) DEFAULT NULL,
+  `permisosUsuario` int(254) NOT NULL,
   `pws` int(255) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -83,21 +82,21 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`numero_de_empleado`, `nombre`, `apellido1`, `apellido2`, `rol`, `pws`) VALUES
-(1, 'ANGEL NEYSER', 'VELASCO', 'ZEBADUA', 1, 12345),
-(2, 'AARON URIEL', 'MACARENO', 'FLORES', 1, 12345),
-(3, 'MARISOL', 'PEREZ', 'SANCHEZ', 1, 12345),
-(4, 'COINTA', 'AMBROCIO', 'CRUZ', 1, 12345),
-(5, 'JOAQUIN', 'VARGAS', 'CAMACHO', 1, 12345),
-(6, 'ERIKA', 'VALLE', 'SANCHEZ', 1, 12345),
-(7, 'MARLEN', 'CASTRO', 'LOPEZ', 1, 12345),
-(8, 'JAVIER', 'MENDOZA', 'MEJIA', 1, 12345),
-(9, 'SILVIA', 'GUZMAN', 'LOPEZ', 1, 12345),
-(10, 'EDITH', 'RIOS', 'MARTINEZ', 1, 12345),
-(11, 'Salma Judith', 'Iturbe', 'Grijalva', 2, 12345),
-(12, 'Yesica Irasema', 'Jacobo', 'Viruel', 2, 12345),
-(13, 'Denia Candelaria', 'Lomas', 'Armenta', 2, 12345),
-(14, 'Jose Humberto', 'Abril', 'Garcia', 2, 12345);
+INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `permisosUsuario`, `pws`) VALUES
+(1, 'ANGEL NEYSER', 'VELASC O ZEBADUA', 1, 12345),
+(2, 'AARON URIEL', 'MACARENO FLORES', 1, 12345),
+(3, 'MARISOL', 'PEREZ SANCHEZ', 1, 12345),
+(4, 'COINTA', 'AMBROCIO CRUZ', 1, 12345),
+(5, 'JOAQUIN', 'VARGAS CAMACHO', 1, 12345),
+(6, 'ERIKA', 'VALLE SANCHEZ', 1, 12345),
+(7, 'MARLEN', 'CASTRO LOPEZ', 1, 12345),
+(8, 'JAVIER', 'MENDOZA MEJIA', 1, 12345),
+(9, 'SILVIA', 'GUZMAN LOPEZ', 1, 12345),
+(10, 'EDITH', 'RIOS MARTINEZ', 1, 12345),
+(11, 'Salma Judith', 'Iturbe Grijalva', 2, 12345),
+(12, 'Yesica Irasema', 'Jacobo Viruel', 2, 12345),
+(13, 'Denia Candelaria', 'Lomas Armenta', 2, 12345),
+(14, 'Jose Humberto', 'Abril Garcia', 2, 12345);
 
 -- --------------------------------------------------------
 
@@ -133,7 +132,9 @@ INSERT INTO `ventas` (`idventa`, `fechaventa`, `horaventa`, `operadorVenta`) VAL
 (14, '2021-11-14', '16:44:55', 5),
 (15, '2021-11-14', '16:59:07', 9),
 (16, '2021-11-14', '17:10:56', 10),
-(17, '2021-11-14', '17:19:05', 8);
+(17, '2021-11-14', '17:19:05', 8),
+(18, '2021-11-16', '11:51:35', 1),
+(19, '2021-11-20', '19:03:03', 1);
 
 -- --------------------------------------------------------
 
@@ -195,7 +196,13 @@ INSERT INTO `ventas_detalle` (`id_venta`, `id_producto`, `cantidad`, `precio_pro
 (17, 511, 2, 12.9),
 (17, 516, 1, 14.9),
 (17, 103, 1, 35),
-(17, 514, 1, 14.9);
+(17, 514, 1, 14.9),
+(18, 509, 1, 11.9),
+(18, 508, 1, 24.9),
+(18, 101, 1, 22),
+(19, 506, 1, 17.9),
+(19, 509, 1, 11.9),
+(19, 507, 1, 17.9);
 
 --
 -- Índices para tablas volcadas
@@ -205,14 +212,14 @@ INSERT INTO `ventas_detalle` (`id_venta`, `id_producto`, `cantidad`, `precio_pro
 -- Indices de la tabla `productos`
 --
 ALTER TABLE `productos`
-  ADD UNIQUE KEY `producto_codigo` (`producto_codigo`);
+  ADD UNIQUE KEY `producto_codigo` (`id_producto`);
 
 --
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`numero_de_empleado`),
-  ADD UNIQUE KEY `numero_de_empleado` (`numero_de_empleado`);
+  ADD PRIMARY KEY (`id_usuario`),
+  ADD UNIQUE KEY `numero_de_empleado` (`id_usuario`);
 
 --
 -- Indices de la tabla `ventas`
@@ -229,7 +236,7 @@ ALTER TABLE `ventas`
 -- AUTO_INCREMENT de la tabla `ventas`
 --
 ALTER TABLE `ventas`
-  MODIFY `idventa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `idventa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

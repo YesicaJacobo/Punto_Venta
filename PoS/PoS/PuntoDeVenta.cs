@@ -92,7 +92,7 @@ namespace PoS
             if (e.KeyChar == 13)
             {
 
-                String query = "SELECT * FROM productos WHERE producto_codigo =" + codigo.Text;
+                String query = "SELECT * FROM productos WHERE id_producto =" + codigo.Text;
                 codigo.Text = "";
                 try
                 {
@@ -341,7 +341,7 @@ namespace PoS
             MenuCafe ventanaCafe = new MenuCafe();
             ventanaCafe.ShowDialog();
 
-            String query = "SELECT * FROM productos WHERE producto_codigo =" + ventanaCafe.codCafe;
+            String query = "SELECT * FROM productos WHERE id_producto =" + ventanaCafe.codCafe;
             //MessageBox.Show(query);
             if (ventanaCafe.codCafe == "")
             {}

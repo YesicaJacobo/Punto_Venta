@@ -29,6 +29,12 @@ namespace PoS
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menúPrincipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +50,16 @@ namespace PoS
             this.corteXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.corteYToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.admin = new System.Windows.Forms.Label();
+            this.info = new System.Windows.Forms.Label();
+            this.info2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabla = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabla)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -82,6 +97,7 @@ namespace PoS
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(192, 28);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -97,6 +113,7 @@ namespace PoS
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(192, 28);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -128,6 +145,7 @@ namespace PoS
             this.productoMenosVendidoToolStripMenuItem.Name = "productoMenosVendidoToolStripMenuItem";
             this.productoMenosVendidoToolStripMenuItem.Size = new System.Drawing.Size(400, 28);
             this.productoMenosVendidoToolStripMenuItem.Text = "Producto menos vendido";
+            this.productoMenosVendidoToolStripMenuItem.Click += new System.EventHandler(this.productoMenosVendidoToolStripMenuItem_Click);
             // 
             // vendedorMásProductivoToolStripMenuItem
             // 
@@ -136,6 +154,7 @@ namespace PoS
             this.vendedorMásProductivoToolStripMenuItem.Name = "vendedorMásProductivoToolStripMenuItem";
             this.vendedorMásProductivoToolStripMenuItem.Size = new System.Drawing.Size(400, 28);
             this.vendedorMásProductivoToolStripMenuItem.Text = "Vendedor más productivo";
+            this.vendedorMásProductivoToolStripMenuItem.Click += new System.EventHandler(this.vendedorMásProductivoToolStripMenuItem_Click);
             // 
             // vendedorMenosProductivoToolStripMenuItem
             // 
@@ -144,6 +163,7 @@ namespace PoS
             this.vendedorMenosProductivoToolStripMenuItem.Name = "vendedorMenosProductivoToolStripMenuItem";
             this.vendedorMenosProductivoToolStripMenuItem.Size = new System.Drawing.Size(400, 28);
             this.vendedorMenosProductivoToolStripMenuItem.Text = "Vendedor menos productivo";
+            this.vendedorMenosProductivoToolStripMenuItem.Click += new System.EventHandler(this.vendedorMenosProductivoToolStripMenuItem_Click);
             // 
             // ventasPorDíaToolStripMenuItem
             // 
@@ -152,6 +172,7 @@ namespace PoS
             this.ventasPorDíaToolStripMenuItem.Name = "ventasPorDíaToolStripMenuItem";
             this.ventasPorDíaToolStripMenuItem.Size = new System.Drawing.Size(400, 28);
             this.ventasPorDíaToolStripMenuItem.Text = "Ventas por día";
+            this.ventasPorDíaToolStripMenuItem.Click += new System.EventHandler(this.ventasPorDíaToolStripMenuItem_Click);
             // 
             // cortesToolStripMenuItem
             // 
@@ -166,6 +187,7 @@ namespace PoS
             // corteXToolStripMenuItem
             // 
             this.corteXToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
+            this.corteXToolStripMenuItem.Enabled = false;
             this.corteXToolStripMenuItem.Font = new System.Drawing.Font("Mat Saleh", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.corteXToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
             this.corteXToolStripMenuItem.Name = "corteXToolStripMenuItem";
@@ -175,6 +197,7 @@ namespace PoS
             // corteYToolStripMenuItem
             // 
             this.corteYToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
+            this.corteYToolStripMenuItem.Enabled = false;
             this.corteYToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
             this.corteYToolStripMenuItem.Name = "corteYToolStripMenuItem";
             this.corteYToolStripMenuItem.Size = new System.Drawing.Size(168, 28);
@@ -192,20 +215,137 @@ namespace PoS
             this.admin.TabIndex = 10;
             this.admin.Text = "Admin:";
             // 
+            // info
+            // 
+            this.info.AutoSize = true;
+            this.info.Font = new System.Drawing.Font("Mat Saleh", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.info.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            this.info.Location = new System.Drawing.Point(107, 62);
+            this.info.Name = "info";
+            this.info.Size = new System.Drawing.Size(571, 24);
+            this.info.TabIndex = 11;
+            this.info.Text = "Bienvenid@ al sistema de Admin de\"Super del Sur\"";
+            // 
+            // info2
+            // 
+            this.info2.AutoSize = true;
+            this.info2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
+            this.info2.Font = new System.Drawing.Font("Eras Medium ITC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.info2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            this.info2.Location = new System.Drawing.Point(71, 101);
+            this.info2.Name = "info2";
+            this.info2.Size = new System.Drawing.Size(518, 81);
+            this.info2.TabIndex = 12;
+            this.info2.Text = "                           Seleccione el reporte que quiere \r\n\r\n                 " +
+    "              consultar en el menú superior";
+            this.info2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
+            this.pictureBox1.Location = new System.Drawing.Point(38, 100);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(723, 315);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tabla
+            // 
+            this.tabla.AllowUserToAddRows = false;
+            this.tabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.tabla.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.tabla.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
+            this.tabla.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabla.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tempus Sans ITC", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            dataGridViewCellStyle1.NullValue = null;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Olive;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(247)))), ((int)(((byte)(166)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tabla.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3});
+            this.tabla.EnableHeadersVisualStyles = false;
+            this.tabla.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            this.tabla.Location = new System.Drawing.Point(71, 127);
+            this.tabla.Name = "tabla";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tabla.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.tabla.RowHeadersVisible = false;
+            this.tabla.RowHeadersWidth = 51;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.NullValue = null;
+            this.tabla.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.tabla.RowTemplate.Height = 60;
+            this.tabla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tabla.Size = new System.Drawing.Size(653, 266);
+            this.tabla.TabIndex = 14;
+            // 
+            // Column1
+            // 
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(228)))), ((int)(((byte)(149)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column1.HeaderText = "-";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column2.HeaderText = "-";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            dataGridViewCellStyle4.NullValue = null;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column3.HeaderText = "-";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
             // SistemaAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tabla);
+            this.Controls.Add(this.info2);
+            this.Controls.Add(this.info);
             this.Controls.Add(this.admin);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.pictureBox1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "SistemaAdmin";
             this.Text = "SistemaAdmin";
             this.Load += new System.EventHandler(this.SistemaAdmin_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,5 +368,12 @@ namespace PoS
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         public System.Windows.Forms.Label admin;
+        private System.Windows.Forms.Label info;
+        private System.Windows.Forms.Label info2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.DataGridView tabla;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }

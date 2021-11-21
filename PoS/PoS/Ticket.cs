@@ -26,7 +26,7 @@ namespace PoS
 
             total.Text = String.Format("{0:0.00}", "Total: " +Ttotal);
             efectivo.Text = "Efectivo: " + Tefectivo;
-            cambio.Text = "Cambio: " + Tcambio;
+            cambio.Text = String.Format("{0:0.00}", "Cambio: " + Tcambio);
             cajero.Text = Tcajero;
         }
 
